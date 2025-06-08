@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  final String? userRole;
-
-  const HomePage({super.key, this.userRole});
+class SettingsPage extends StatefulWidget {
+  const SettingsPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<SettingsPage> createState() => _SettingsPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _SettingsPageState extends State<SettingsPage> {
   bool _notificationsEnabled = true;
 
   @override
@@ -27,6 +25,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         children: [
+          // Preferences Section
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
@@ -57,6 +56,7 @@ class _HomePageState extends State<HomePage> {
             trailing: const Text('Light'),
           ),
           const Divider(),
+          // Support Section
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
@@ -82,6 +82,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           const Divider(),
+          // Legal Section
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
@@ -107,6 +108,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           const SizedBox(height: 50),
+          // Log Out Button
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: ElevatedButton(
@@ -114,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                 // TODO: Implement Log Out functionality
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueGrey[50],
+                backgroundColor: Colors.blueGrey[50], // Light grey background
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8.0),
@@ -132,4 +134,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-}
+} 
