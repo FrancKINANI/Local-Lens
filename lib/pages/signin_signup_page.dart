@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:myapp/pages/home_page.dart'; // Replace 'your_app_name' with your actual project name
+import 'home_page.dart';
 
 class SignInSignUpPage extends StatefulWidget {
   const SignInSignUpPage({super.key});
@@ -100,7 +100,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                 alignment: Alignment.centerRight,
                 child: TextButton(
                   onPressed: () {
-                    // TODO: Implement Forgot Password functionality
+                    
                   },
                   child: const Text(
                     'Forgot Password?',
@@ -148,7 +148,6 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8.0),
-                  border: BorderSide.none,
                 ),
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
