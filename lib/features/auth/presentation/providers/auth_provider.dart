@@ -1,72 +1,55 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:local_lens/features/auth/data/models/user_model.dart';
+import 'package:local_lens/features/auth/data/repositories/auth_repository_impl.dart';
 import 'package:local_lens/features/auth/domain/repositories/auth_repository.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
+final supabaseClientProvider = Provider<SupabaseClient>((ref) {
+  return Supabase.instance.client;
+});
 
 final authRepositoryProvider = Provider<AuthRepository>((ref) {
-  throw UnimplementedError('AuthRepository must be provided');
+  final supabaseClient = ref.watch(supabaseClientProvider);
+  return AuthRepositoryImpl(supabaseClient);
 });
 
-final authStateProvider = StateNotifierProvider<AuthNotifier, AsyncValue<UserModel?>>((ref) {
+final authStateProvider = StateNotifierProvider<AuthStateNotifier, AsyncValue<UserModel?>>((ref) {
   final repository = ref.watch(authRepositoryProvider);
-  return AuthNotifier(repository);
+  return AuthStateNotifier(repository);
 });
 
-class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
+class AuthStateNotifier extends StateNotifier<AsyncValue<UserModel?>> {
   final AuthRepository _repository;
 
-  AuthNotifier(this._repository) : super(const AsyncValue.loading()) {
-    _init();
-  }
+  AuthStateNotifier(this._repository) : super(const AsyncValue.data(null));
 
-  Future<void> _init() async {
+  Future<void> signIn({required String email, required String password}) async {
+    state = const AsyncValue.loading();
     try {
-      final user = await _repository.getCurrentUser();
+      final user = await _repository.signInWithEmailAndPassword(email: email, password: password);
       state = AsyncValue.data(user);
-    } catch (e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e, st) {
+      state = AsyncValue.error(e, st);
     }
   }
 
-  Future<void> signIn({
-    required String email,
-    required String password,
-  }) async {
+  Future<void> signUp({required String email, required String password, required String name}) async {
     state = const AsyncValue.loading();
     try {
-      final user = await _repository.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
+      final user = await _repository.signUpWithEmailAndPassword(email: email, password: password, name: name);
       state = AsyncValue.data(user);
-    } catch (e, stack) {
-      state = AsyncValue.error(e, stack);
-    }
-  }
-
-  Future<void> signUp({
-    required String email,
-    required String password,
-    required String name,
-  }) async {
-    state = const AsyncValue.loading();
-    try {
-      final user = await _repository.signUpWithEmailAndPassword(
-        email: email,
-        password: password,
-        name: name,
-      );
-      state = AsyncValue.data(user);
-    } catch (e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e, st) {
+      state = AsyncValue.error(e, st);
     }
   }
 
   Future<void> signOut() async {
+    state = const AsyncValue.loading();
     try {
       await _repository.signOut();
       state = const AsyncValue.data(null);
-    } catch (e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e, st) {
+      state = AsyncValue.error(e, st);
     }
   }
 
