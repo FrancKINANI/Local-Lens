@@ -1,32 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'pages/signin_page.dart';
+import 'package:local_lens/core/config/app_config.dart';
+import 'package:local_lens/core/theme/app_theme.dart';
+import 'package:local_lens/features/auth/presentation/pages/login_page.dart';
 
-Future<void> main() async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  
+  // Initialize Supabase
   await Supabase.initialize(
-    url:
-        'https://lofwbdpczlueczlghzcx.supabase.co', // Replace with your Supabase URL
-    anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxvZndiZHBjemx1ZWN6bGdoemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkzMDg1NDYsImV4cCI6MjA2NDg4NDU0Nn0.BkXtUL9xLLni7Pb8jhUqBVCAsja0rbVP55uNTq__yuc', // Replace with your Supabase anonymous public key 
+    url: AppConfig.supabaseUrl,
+    anonKey: AppConfig.supabaseAnonKey,
   );
-
-  runApp(const MyApp());
+  
+  runApp(
+    const ProviderScope(
+      child: LocalLensApp(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class LocalLensApp extends ConsumerWidget {
+  const LocalLensApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       title: 'Local Lens',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
-      home: const SignInPage(),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      home: const LoginPage(),
     );
   }
 }

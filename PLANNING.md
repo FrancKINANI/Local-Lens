@@ -2,7 +2,7 @@
 
 ## 🎯 Project Overview
 
-**Project Name**: TourismApp - Tourism Discovery Mobile Application  
+**Project Name**: Local Lens - Tourism Discovery Mobile Application  
 **Objective**: Complete local tourism platform promoting discovery, community interaction and local business promotion  
 **Target Platform**: Mobile (iOS/Android)  
 **Start Date**: June 2025  

@@ -48,6 +48,27 @@ Local Lens is a Flutter application designed to help users discover and explore 
 - UX/UI improvements
 - Unit, widget, and integration tests
 
+### New Features
+- Authentication (Sign in, Sign up, Sign out)
+- User profile management
+- Place discovery (model and test implemented)
+- Reviews (model and test implemented)
+- Tours (model and test implemented)
+- Events (model and test implemented)
+
+## Project Structure
+- Follows Clean Architecture and feature-first organization
+- Models use Freezed and JSON serialization
+- Unit tests for each model and repository
+
+## Progress
+- [x] Auth and Place models implemented
+- [x] Place model tested (see `test/features/places/data/models/place_model_test.dart`)
+- [x] Review model tested (see `test/features/reviews/data/models/review_model_test.dart`)
+- [x] Tour model tested (see `test/features/tours/data/models/tour_model_test.dart`)
+- [x] Event model tested (see `test/features/events/data/models/event_model_test.dart`)
+- [ ] More unit tests for other models (in progress)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

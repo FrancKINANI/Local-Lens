@@ -39,11 +39,16 @@
   - [ ] Configure Riverpod/Provider for state management
   - [ ] Create configuration classes (environments, constants)
 
-- [ ] **T005** - Data Models and Types (06/11/2025)
-  - [ ] Define Dart models (User, Place, Review, Tour, Event)
-  - [ ] Integration with json_serializable
-  - [ ] Validation with packages like freezed
-  - [ ] Unit tests for models
+- [x] **T005** - Data Models and Types (06/11/2025)
+  - [x] User and Place models defined (with Freezed/JSON)
+  - [x] Unit test for Place model: test/features/places/data/models/place_model_test.dart
+  - [x] Review model defined (with Freezed/JSON)
+  - [x] Unit test for Review model: test/features/reviews/data/models/review_model_test.dart
+  - [x] Tour model defined (with Freezed/JSON)
+  - [x] Unit test for Tour model: test/features/tours/data/models/tour_model_test.dart
+  - [x] Event model defined (with Freezed/JSON)
+  - [x] Unit test for Event model: test/features/events/data/models/event_model_test.dart
+  - [ ] More unit tests for other models (pending)
 
 ---
 
