@@ -50,15 +50,16 @@ class AuthRepositoryImpl implements AuthRepository {
         throw Exception('Failed to sign up');
       }
 
-      // Create user profile in the users table
-      final userData = await _supabaseClient.from('users').insert({
+      // Insert user data into the users table
+      await _supabaseClient.from('users').insert({
         'id': response.user!.id,
         'email': email,
-        'name': name,
-        'role': 'user', // Default role
-      }).select().single();
+        'full_name': name,
+        'created_at': DateTime.now().toIso8601String(),
+        'updated_at': DateTime.now().toIso8601String(),
+      });
 
-      return UserModel.fromJson(userData);
+      return UserModel.fromJson(response.user!.toJson());
     } catch (e) {
       throw Exception('Failed to sign up: $e');
     }
