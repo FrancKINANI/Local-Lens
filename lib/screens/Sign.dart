@@ -11,13 +11,13 @@ class SignState extends State<Sign> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class SignState extends State<Sign> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +38,7 @@ class SignState extends State<Sign> {
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
-																				Container(
+																				SizedBox(
 																					height: 320,
 																					width: double.infinity,
 																					child: Image.network(
@@ -48,7 +48,7 @@ class SignState extends State<Sign> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Welcome to TourismeApp",
 																						style: TextStyle(
 																							color: Color(0xFF0C161C),
@@ -60,7 +60,7 @@ class SignState extends State<Sign> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Explore the vibrant city of Casablanca with our app. Discover hidden gems, plan your itinerary, and experience the best of what the city has to offer.",
 																						style: TextStyle(
 																							color: Color(0xFF0C161C),
@@ -82,7 +82,7 @@ class SignState extends State<Sign> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(12),
-																												color: Color(0xFF0C91F2),
+																												color: const Color(0xFF0C91F2),
 																											),
 																											padding: const EdgeInsets.symmetric(vertical: 12),
 																											margin: const EdgeInsets.only( bottom: 12, left: 16, right: 16),
@@ -91,7 +91,7 @@ class SignState extends State<Sign> {
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
-																														child: Text(
+																														child: const Text(
 																															"Log In",
 																															style: TextStyle(
 																																color: Color(0xFFF7F9FC),
@@ -111,7 +111,7 @@ class SignState extends State<Sign> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(12),
-																												color: Color(0xFFE8EDF4),
+																												color: const Color(0xFFE8EDF4),
 																											),
 																											padding: const EdgeInsets.symmetric(vertical: 12),
 																											margin: const EdgeInsets.only( bottom: 12, left: 16, right: 16),
@@ -120,7 +120,7 @@ class SignState extends State<Sign> {
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
-																														child: Text(
+																														child: const Text(
 																															"Sign Up",
 																															style: TextStyle(
 																																color: Color(0xFF0C161C),
@@ -146,7 +146,7 @@ class SignState extends State<Sign> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 1),
-																													child: Text(
+																													child: const Text(
 																														"Continue as Visitor",
 																														style: TextStyle(
 																															color: Color(0xFF0C161C),
@@ -167,7 +167,7 @@ class SignState extends State<Sign> {
 																		),
 																	),
 																),
-																Container(
+																SizedBox(
 																	height: 73,
 																	width: double.infinity,
 																	child: Image.network(

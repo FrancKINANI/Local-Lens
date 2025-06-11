@@ -11,13 +11,13 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFFFFFFF),
+														color: const Color(0xFFFFFFFF),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFFFFFFF),
+																						color: const Color(0xFFFFFFFF),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Column(
@@ -49,7 +49,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																								Container(
 																									margin: const EdgeInsets.symmetric(horizontal: 48),
 																									width: double.infinity,
-																									child: Text(
+																									child: const Text(
 																										"Welcome to Wanderlust",
 																										style: TextStyle(
 																											color: Color(0xFF161411),
@@ -74,31 +74,31 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFF161411),
+																										color: const Color(0xFF161411),
 																									),
 																									margin: const EdgeInsets.only( right: 12),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFFE2E0DD),
+																										color: const Color(0xFFE2E0DD),
 																									),
 																									margin: const EdgeInsets.only( right: 12),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFFE2E0DD),
+																										color: const Color(0xFFE2E0DD),
 																									),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																							]
 																						),
@@ -106,7 +106,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Discover Your Perfect Trip",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -118,7 +118,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Explore curated tours and activities tailored to your interests. Find hidden gems and create unforgettable memories.",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -142,7 +142,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(24),
-																								color: Color(0xFFEDD1BF),
+																								color: const Color(0xFFEDD1BF),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -151,7 +151,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Next",
 																											style: TextStyle(
 																												color: Color(0xFF161411),
@@ -169,7 +169,7 @@ class WelcomeToLocalLensState extends State<WelcomeToLocalLens> {
 																		),
 																	),
 																),
-																Container(
+																SizedBox(
 																	height: 73,
 																	width: double.infinity,
 																	child: Image.network(

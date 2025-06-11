@@ -11,13 +11,13 @@ class WelcomePagesState extends State<WelcomePages> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,18 +26,18 @@ class WelcomePagesState extends State<WelcomePages> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
-																				Container(
+																				SizedBox(
 																					height: 320,
 																					width: double.infinity,
 																					child: Image.network(
@@ -48,8 +48,8 @@ class WelcomePagesState extends State<WelcomePages> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
 																					width: double.infinity,
-																					child: Text(
-																						"Discover Casablanca\'s Hidden Gems",
+																					child: const Text(
+																						"Discover Casablanca's Hidden Gems",
 																						style: TextStyle(
 																							color: Color(0xFF0C161C),
 																							fontSize: 28,
@@ -61,8 +61,8 @@ class WelcomePagesState extends State<WelcomePages> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
-																						"Explore the city\'s rich history, vibrant culture, and breathtaking landscapes with our curated guides.",
+																					child: const Text(
+																						"Explore the city's rich history, vibrant culture, and breathtaking landscapes with our curated guides.",
 																						style: TextStyle(
 																							color: Color(0xFF0C161C),
 																							fontSize: 16,
@@ -81,31 +81,31 @@ class WelcomePagesState extends State<WelcomePages> {
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFF0C91F2),
+																										color: const Color(0xFF0C91F2),
 																									),
 																									margin: const EdgeInsets.only( right: 12),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFFCEDDE8),
+																										color: const Color(0xFFCEDDE8),
 																									),
 																									margin: const EdgeInsets.only( right: 12),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																								Container(
 																									decoration: BoxDecoration(
 																										borderRadius: BorderRadius.circular(4),
-																										color: Color(0xFFCEDDE8),
+																										color: const Color(0xFFCEDDE8),
 																									),
 																									width: 8,
 																									height: 8,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																							]
 																						),
@@ -117,7 +117,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(12),
-																								color: Color(0xFF0C91F2),
+																								color: const Color(0xFF0C91F2),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -126,7 +126,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Next",
 																											style: TextStyle(
 																												color: Color(0xFFF7F9FC),
@@ -145,18 +145,18 @@ class WelcomePagesState extends State<WelcomePages> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
-																					child: Container(
+																					child: SizedBox(
 																						width: double.infinity,
 																						child: Column(
 																							crossAxisAlignment: CrossAxisAlignment.start,
 																							children: [
-																								Container(
+																								SizedBox(
 																									height: 320,
 																									width: double.infinity,
 																									child: Image.network(
@@ -167,7 +167,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																								Container(
 																									margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
 																									width: double.infinity,
-																									child: Text(
+																									child: const Text(
 																										"Craft Your Perfect Casablanca Adventure",
 																										style: TextStyle(
 																											color: Color(0xFF0C161C),
@@ -180,7 +180,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																								Container(
 																									margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																									width: double.infinity,
-																									child: Text(
+																									child: const Text(
 																										"Personalize your journey by creating custom tours tailored to your interests and preferences.",
 																										style: TextStyle(
 																											color: Color(0xFF0C161C),
@@ -200,31 +200,31 @@ class WelcomePagesState extends State<WelcomePages> {
 																												Container(
 																													decoration: BoxDecoration(
 																														borderRadius: BorderRadius.circular(4),
-																														color: Color(0xFFCEDDE8),
+																														color: const Color(0xFFCEDDE8),
 																													),
 																													margin: const EdgeInsets.only( right: 12),
 																													width: 8,
 																													height: 8,
-																													child: SizedBox(),
+																													child: const SizedBox(),
 																												),
 																												Container(
 																													decoration: BoxDecoration(
 																														borderRadius: BorderRadius.circular(4),
-																														color: Color(0xFF0C91F2),
+																														color: const Color(0xFF0C91F2),
 																													),
 																													margin: const EdgeInsets.only( right: 12),
 																													width: 8,
 																													height: 8,
-																													child: SizedBox(),
+																													child: const SizedBox(),
 																												),
 																												Container(
 																													decoration: BoxDecoration(
 																														borderRadius: BorderRadius.circular(4),
-																														color: Color(0xFFCEDDE8),
+																														color: const Color(0xFFCEDDE8),
 																													),
 																													width: 8,
 																													height: 8,
-																													child: SizedBox(),
+																													child: const SizedBox(),
 																												),
 																											]
 																										),
@@ -236,7 +236,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(12),
-																												color: Color(0xFF0C91F2),
+																												color: const Color(0xFF0C91F2),
 																											),
 																											padding: const EdgeInsets.symmetric(vertical: 12),
 																											margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -245,7 +245,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
-																														child: Text(
+																														child: const Text(
 																															"Next",
 																															style: TextStyle(
 																																color: Color(0xFFF7F9FC),
@@ -264,18 +264,18 @@ class WelcomePagesState extends State<WelcomePages> {
 																					),
 																				),
 																				IntrinsicHeight(
-																					child: Container(
+																					child: SizedBox(
 																						width: double.infinity,
 																						child: Column(
 																							crossAxisAlignment: CrossAxisAlignment.start,
 																							children: [
 																								IntrinsicHeight(
-																									child: Container(
+																									child: SizedBox(
 																										width: double.infinity,
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Container(
+																												SizedBox(
 																													height: 320,
 																													width: double.infinity,
 																													child: Image.network(
@@ -286,7 +286,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																												Container(
 																													margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
 																													width: double.infinity,
-																													child: Text(
+																													child: const Text(
 																														"Share Your Casablanca Story",
 																														style: TextStyle(
 																															color: Color(0xFF0C161C),
@@ -299,7 +299,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																												Container(
 																													margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																													width: double.infinity,
-																													child: Text(
+																													child: const Text(
 																														"Contribute to the community by leaving reviews and sharing your experiences with fellow travelers.",
 																														style: TextStyle(
 																															color: Color(0xFF0C161C),
@@ -319,31 +319,31 @@ class WelcomePagesState extends State<WelcomePages> {
 																																Container(
 																																	decoration: BoxDecoration(
 																																		borderRadius: BorderRadius.circular(4),
-																																		color: Color(0xFFCEDDE8),
+																																		color: const Color(0xFFCEDDE8),
 																																	),
 																																	margin: const EdgeInsets.only( right: 12),
 																																	width: 8,
 																																	height: 8,
-																																	child: SizedBox(),
+																																	child: const SizedBox(),
 																																),
 																																Container(
 																																	decoration: BoxDecoration(
 																																		borderRadius: BorderRadius.circular(4),
-																																		color: Color(0xFFCEDDE8),
+																																		color: const Color(0xFFCEDDE8),
 																																	),
 																																	margin: const EdgeInsets.only( right: 12),
 																																	width: 8,
 																																	height: 8,
-																																	child: SizedBox(),
+																																	child: const SizedBox(),
 																																),
 																																Container(
 																																	decoration: BoxDecoration(
 																																		borderRadius: BorderRadius.circular(4),
-																																		color: Color(0xFF0C91F2),
+																																		color: const Color(0xFF0C91F2),
 																																	),
 																																	width: 8,
 																																	height: 8,
-																																	child: SizedBox(),
+																																	child: const SizedBox(),
 																																),
 																															]
 																														),
@@ -355,7 +355,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																borderRadius: BorderRadius.circular(12),
-																																color: Color(0xFF0C91F2),
+																																color: const Color(0xFF0C91F2),
 																															),
 																															padding: const EdgeInsets.symmetric(vertical: 12),
 																															margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -364,7 +364,7 @@ class WelcomePagesState extends State<WelcomePages> {
 																																children: [
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1),
-																																		child: Text(
+																																		child: const Text(
 																																			"Get Started",
 																																			style: TextStyle(
 																																				color: Color(0xFFF7F9FC),
@@ -383,10 +383,10 @@ class WelcomePagesState extends State<WelcomePages> {
 																									),
 																								),
 																								Container(
-																									color: Color(0xFFF7F9FC),
+																									color: const Color(0xFFF7F9FC),
 																									height: 20,
 																									width: double.infinity,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																							]
 																						),

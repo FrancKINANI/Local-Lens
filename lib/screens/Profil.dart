@@ -11,13 +11,13 @@ class ProfilState extends State<Profil> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -25,7 +25,7 @@ class ProfilState extends State<Profil> {
 											crossAxisAlignment: CrossAxisAlignment.start,
 											children: [
 												IntrinsicHeight(
-													child: Container(
+													child: SizedBox(
 														width: double.infinity,
 														child: Stack(
 															clipBehavior: Clip.none,
@@ -35,14 +35,14 @@ class ProfilState extends State<Profil> {
 																	children: [
 																		IntrinsicHeight(
 																			child: Container(
-																				color: Color(0xFFFFFFFF),
+																				color: const Color(0xFFFFFFFF),
 																				width: double.infinity,
 																				child: Column(
 																					crossAxisAlignment: CrossAxisAlignment.start,
 																					children: [
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFFFFFFF),
+																								color: const Color(0xFFFFFFFF),
 																								padding: const EdgeInsets.symmetric(vertical: 16),
 																								width: double.infinity,
 																								child: Row(
@@ -57,7 +57,7 @@ class ProfilState extends State<Profil> {
 																												fit: BoxFit.fill,
 																											)
 																										),
-																										Text(
+																										const Text(
 																											"Profile",
 																											style: TextStyle(
 																												color: Color(0xFF161411),
@@ -65,10 +65,10 @@ class ProfilState extends State<Profil> {
 																												fontWeight: FontWeight.bold,
 																											),
 																										),
-																										Container(
+																										SizedBox(
 																											width: 48,
 																											height: 48,
-																											child: SizedBox(),
+																											child: const SizedBox(),
 																										),
 																									]
 																								),
@@ -99,7 +99,7 @@ class ProfilState extends State<Profil> {
 																																	children: [
 																																		Container(
 																																			margin: const EdgeInsets.only( bottom: 1),
-																																			child: Text(
+																																			child: const Text(
 																																				"Sophia Carter",
 																																				style: TextStyle(
 																																					color: Color(0xFF161411),
@@ -110,7 +110,7 @@ class ProfilState extends State<Profil> {
 																																		),
 																																		Container(
 																																			margin: const EdgeInsets.only( bottom: 1),
-																																			child: Text(
+																																			child: const Text(
 																																				"San Francisco, CA",
 																																				style: TextStyle(
 																																					color: Color(0xFF827268),
@@ -120,7 +120,7 @@ class ProfilState extends State<Profil> {
 																																		),
 																																		Container(
 																																			margin: const EdgeInsets.only( bottom: 1),
-																																			child: Text(
+																																			child: const Text(
 																																				"Joined 2021",
 																																				style: TextStyle(
 																																					color: Color(0xFF827268),
@@ -142,7 +142,7 @@ class ProfilState extends State<Profil> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 32, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"My Favorites",
 																								style: TextStyle(
 																									color: Color(0xFF161411),
@@ -190,7 +190,7 @@ class ProfilState extends State<Profil> {
 																																			children: [
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 10),
-																																					child: Text(
+																																					child: const Text(
 																																						"Golden Gate Bridge",
 																																						style: TextStyle(
 																																							color: Color(0xFF161411),
@@ -202,7 +202,7 @@ class ProfilState extends State<Profil> {
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 44),
 																																					width: 116,
-																																					child: Text(
+																																					child: const Text(
 																																						"Iconic suspension bridge",
 																																						style: TextStyle(
 																																							color: Color(0xFF827268),
@@ -252,7 +252,7 @@ class ProfilState extends State<Profil> {
 																																			children: [
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 52),
-																																					child: Text(
+																																					child: const Text(
 																																						"Alcatraz Island",
 																																						style: TextStyle(
 																																							color: Color(0xFF161411),
@@ -263,7 +263,7 @@ class ProfilState extends State<Profil> {
 																																				),
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 26),
-																																					child: Text(
+																																					child: const Text(
 																																						"Historic prison island",
 																																						style: TextStyle(
 																																							color: Color(0xFF827268),
@@ -288,7 +288,7 @@ class ProfilState extends State<Profil> {
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1),
-																																	child: Text(
+																																	child: const Text(
 																																		"Lombard Street",
 																																		style: TextStyle(
 																																			color: Color(0xFF161411),
@@ -297,9 +297,9 @@ class ProfilState extends State<Profil> {
 																																		),
 																																	),
 																																),
-																																Container(
+																																SizedBox(
 																																	width: 29,
-																																	child: Text(
+																																	child: const Text(
 																																		"Crookedest street in the world",
 																																		style: TextStyle(
 																																			color: Color(0xFF827268),
@@ -319,7 +319,7 @@ class ProfilState extends State<Profil> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 16, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"My Submissions",
 																								style: TextStyle(
 																									color: Color(0xFF161411),
@@ -330,7 +330,7 @@ class ProfilState extends State<Profil> {
 																						),
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFFFFFFF),
+																								color: const Color(0xFFFFFFFF),
 																								padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																								width: double.infinity,
 																								child: Row(
@@ -351,7 +351,7 @@ class ProfilState extends State<Profil> {
 																													children: [
 																														Container(
 																															margin: const EdgeInsets.only( right: 45),
-																															child: Text(
+																															child: const Text(
 																																"Golden Gate Park",
 																																style: TextStyle(
 																																	color: Color(0xFF161411),
@@ -360,7 +360,7 @@ class ProfilState extends State<Profil> {
 																																),
 																															),
 																														),
-																														Text(
+																														const Text(
 																															"Submitted on 2023-08-15",
 																															style: TextStyle(
 																																color: Color(0xFF827268),
@@ -377,7 +377,7 @@ class ProfilState extends State<Profil> {
 																						),
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFFFFFFF),
+																								color: const Color(0xFFFFFFFF),
 																								padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																								width: double.infinity,
 																								child: Row(
@@ -398,8 +398,8 @@ class ProfilState extends State<Profil> {
 																													children: [
 																														Container(
 																															margin: const EdgeInsets.only( right: 43),
-																															child: Text(
-																																"Fisherman\'s Wharf",
+																															child: const Text(
+																																"Fisherman's Wharf",
 																																style: TextStyle(
 																																	color: Color(0xFF161411),
 																																	fontSize: 16,
@@ -407,7 +407,7 @@ class ProfilState extends State<Profil> {
 																																),
 																															),
 																														),
-																														Text(
+																														const Text(
 																															"Submitted on 2023-09-22",
 																															style: TextStyle(
 																																color: Color(0xFF827268),
@@ -424,7 +424,7 @@ class ProfilState extends State<Profil> {
 																						),
 																						IntrinsicHeight(
 																							child: Container(
-																								decoration: BoxDecoration(
+																								decoration: const BoxDecoration(
 																									border: Border(
 																										top: BorderSide(
 																											color: Color(0xFFF4F2F2),
@@ -458,7 +458,7 @@ class ProfilState extends State<Profil> {
 																															),
 																															Container(
 																																margin: const EdgeInsets.only( bottom: 1, left: 19, right: 19),
-																																child: Text(
+																																child: const Text(
 																																	"Explore",
 																																	style: TextStyle(
 																																		color: Color(0xFF827268),
@@ -492,7 +492,7 @@ class ProfilState extends State<Profil> {
 																															),
 																															Container(
 																																margin: const EdgeInsets.only( bottom: 1, left: 15, right: 15),
-																																child: Text(
+																																child: const Text(
 																																	"Favorites",
 																																	style: TextStyle(
 																																		color: Color(0xFF827268),
@@ -526,7 +526,7 @@ class ProfilState extends State<Profil> {
 																															),
 																															Container(
 																																margin: const EdgeInsets.only( bottom: 1, left: 29, right: 29),
-																																child: Text(
+																																child: const Text(
 																																	"Plan",
 																																	style: TextStyle(
 																																		color: Color(0xFF827268),
@@ -562,7 +562,7 @@ class ProfilState extends State<Profil> {
 																															),
 																															Container(
 																																margin: const EdgeInsets.only( bottom: 1, left: 23, right: 23),
-																																child: Text(
+																																child: const Text(
 																																	"Profile",
 																																	style: TextStyle(
 																																		color: Color(0xFF161411),
@@ -612,10 +612,10 @@ class ProfilState extends State<Profil> {
 													),
 												),
 												Container(
-													color: Color(0xFFFFFFFF),
+													color: const Color(0xFFFFFFFF),
 													height: 20,
 													width: double.infinity,
-													child: SizedBox(),
+													child: const SizedBox(),
 												),
 											],
 										)

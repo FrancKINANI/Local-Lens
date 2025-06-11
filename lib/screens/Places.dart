@@ -11,7 +11,7 @@ class PlacesState extends State<Places> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
@@ -19,8 +19,8 @@ class PlacesState extends State<Places> {
 								child: Container(
 									decoration: BoxDecoration(
 										borderRadius: BorderRadius.circular(40),
-										color: Color(0xF7FFFFFF),
-										boxShadow: [
+										color: const Color(0xF7FFFFFF),
+										boxShadow: const [
 											BoxShadow(
 												color: Color(0x1C242132),
 												blurRadius: 160,
@@ -51,7 +51,7 @@ class PlacesState extends State<Places> {
 												),
 												Container(
 													margin: const EdgeInsets.only( bottom: 7, left: 31),
-													child: Text(
+													child: const Text(
 														"Find the beauty!",
 														style: TextStyle(
 															color: Color(0xFF0B4980),
@@ -62,7 +62,7 @@ class PlacesState extends State<Places> {
 												),
 												Container(
 													margin: const EdgeInsets.only( bottom: 28, left: 31),
-													child: Text(
+													child: const Text(
 														"Never miss a thing around you.",
 														style: TextStyle(
 															color: Color(0xFF0A487F),
@@ -71,7 +71,7 @@ class PlacesState extends State<Places> {
 													),
 												),
 												IntrinsicHeight(
-													child: Container(
+													child: SizedBox(
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,8 +81,8 @@ class PlacesState extends State<Places> {
 																		child: Container(
 																			decoration: BoxDecoration(
 																				borderRadius: BorderRadius.circular(16),
-																				color: Color(0xFFFFFFFF),
-																				boxShadow: [
+																				color: const Color(0xFFFFFFFF),
+																				boxShadow: const [
 																					BoxShadow(
 																						color: Color(0x330A487F),
 																						blurRadius: 40,
@@ -95,7 +95,7 @@ class PlacesState extends State<Places> {
 																			child: Column(
 																				crossAxisAlignment: CrossAxisAlignment.start,
 																				children: [
-																					Container(
+																					SizedBox(
 																						width: 246,
 																						height: 127,
 																						child: Image.network(
@@ -109,7 +109,7 @@ class PlacesState extends State<Places> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.end,
@@ -121,8 +121,8 @@ class PlacesState extends State<Places> {
 																							child: Container(
 																								decoration: BoxDecoration(
 																									borderRadius: BorderRadius.circular(16),
-																									color: Color(0xFFFFFFFF),
-																									boxShadow: [
+																									color: const Color(0xFFFFFFFF),
+																									boxShadow: const [
 																										BoxShadow(
 																											color: Color(0x330A487F),
 																											blurRadius: 40,
@@ -145,7 +145,7 @@ class PlacesState extends State<Places> {
 																										),
 																										Container(
 																											margin: const EdgeInsets.only( left: 15),
-																											child: Text(
+																											child: const Text(
 																												"37 km from current location",
 																												style: TextStyle(
 																													color: Color(0xFF032C4F),
@@ -169,7 +169,7 @@ class PlacesState extends State<Places> {
 																			padding: const EdgeInsets.only( top: 211, bottom: 40),
 																			decoration: BoxDecoration(
 																				borderRadius: BorderRadius.circular(40),
-																				image: DecorationImage(
+																				image: const DecorationImage(
 																					image: NetworkImage("https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/bec18697-4a16-47a1-8e0b-5cd2fc7e8de1"),
 																					fit: BoxFit.cover
 																				),
@@ -227,7 +227,7 @@ class PlacesState extends State<Places> {
 																							child: Container(
 																								decoration: BoxDecoration(
 																									borderRadius: BorderRadius.circular(12),
-																									gradient: LinearGradient(
+																									gradient: const LinearGradient(
 																										begin: Alignment(1, -3),
 																										end: Alignment(1, 3),
 																										colors: [
@@ -241,9 +241,9 @@ class PlacesState extends State<Places> {
 																								child: Column(
 																									crossAxisAlignment: CrossAxisAlignment.start,
 																									children: [
-																										Container(
+																										SizedBox(
 																											width: 134,
-																											child: Text(
+																											child: const Text(
 																												"Explore All Places",
 																												style: TextStyle(
 																													color: Color(0xFFFFFFFF),

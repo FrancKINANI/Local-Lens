@@ -45,8 +45,8 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             // Favorites Section
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -127,8 +127,8 @@ class ProfilePage extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             // Visit History Section
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(

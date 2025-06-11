@@ -14,13 +14,13 @@ class CreateTourState extends State<CreateTour> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -29,20 +29,20 @@ class CreateTourState extends State<CreateTour> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFFFFFFF),
+														color: const Color(0xFFFFFFFF),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFFFFFFF),
+																						color: const Color(0xFFFFFFFF),
 																						padding: const EdgeInsets.symmetric(vertical: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -57,7 +57,7 @@ class CreateTourState extends State<CreateTour> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Create Tour",
 																									style: TextStyle(
 																										color: Color(0xFF161411),
@@ -65,10 +65,10 @@ class CreateTourState extends State<CreateTour> {
 																										fontWeight: FontWeight.bold,
 																									),
 																								),
-																								Container(
+																								SizedBox(
 																									width: 48,
 																									height: 48,
-																									child: SizedBox(),
+																									child: const SizedBox(),
 																								),
 																							]
 																						),
@@ -79,20 +79,20 @@ class CreateTourState extends State<CreateTour> {
 																						alignment: Alignment.center,
 																						decoration: BoxDecoration(
 																							borderRadius: BorderRadius.circular(12),
-																							color: Color(0xFFF4F2F2),
+																							color: const Color(0xFFF4F2F2),
 																						),
 																						padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																						margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																						width: double.infinity,
 																						child: TextField(
-																							style: TextStyle(
+																							style: const TextStyle(
 																								color: Color(0xFF827268),
 																								fontSize: 16,
 																							),
 																							onChanged: (value) { 
 																								setState(() { textField1 = value; });
 																							},
-																							decoration: InputDecoration(
+																							decoration: const InputDecoration(
 																								hintText: "Tour  Name",
 																								isDense: true,
 																								contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -106,20 +106,20 @@ class CreateTourState extends State<CreateTour> {
 																						alignment: Alignment.center,
 																						decoration: BoxDecoration(
 																							borderRadius: BorderRadius.circular(12),
-																							color: Color(0xFFF4F2F2),
+																							color: const Color(0xFFF4F2F2),
 																						),
 																						padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																						margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																						width: double.infinity,
 																						child: TextField(
-																							style: TextStyle(
+																							style: const TextStyle(
 																								color: Color(0xFF827268),
 																								fontSize: 16,
 																							),
 																							onChanged: (value) { 
 																								setState(() { textField2 = value; });
 																							},
-																							decoration: InputDecoration(
+																							decoration: const InputDecoration(
 																								hintText: "Tour  Description",
 																								isDense: true,
 																								contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -130,7 +130,7 @@ class CreateTourState extends State<CreateTour> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Select Locations",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -153,11 +153,11 @@ class CreateTourState extends State<CreateTour> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(16),
-																													color: Color(0xFFF4F2F2),
+																													color: const Color(0xFFF4F2F2),
 																												),
 																												padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
 																												margin: const EdgeInsets.only( right: 12),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -181,11 +181,11 @@ class CreateTourState extends State<CreateTour> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(16),
-																													color: Color(0xFFF4F2F2),
+																													color: const Color(0xFFF4F2F2),
 																												),
 																												padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
 																												margin: const EdgeInsets.only( right: 12),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -209,10 +209,10 @@ class CreateTourState extends State<CreateTour> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(16),
-																													color: Color(0xFFF4F2F2),
+																													color: const Color(0xFFF4F2F2),
 																												),
 																												padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -266,14 +266,14 @@ class CreateTourState extends State<CreateTour> {
 																																		)
 																																	),
 																																	IntrinsicHeight(
-																																		child: Container(
+																																		child: SizedBox(
 																																			width: double.infinity,
 																																			child: Column(
 																																				crossAxisAlignment: CrossAxisAlignment.start,
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"The Art Gallery",
 																																							style: TextStyle(
 																																								color: Color(0xFF161411),
@@ -285,7 +285,7 @@ class CreateTourState extends State<CreateTour> {
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
 																																						width: double.infinity,
-																																						child: Text(
+																																						child: const Text(
 																																							"Explore classic and modern art",
 																																							style: TextStyle(
 																																								color: Color(0xFF827268),
@@ -320,14 +320,14 @@ class CreateTourState extends State<CreateTour> {
 																																		)
 																																	),
 																																	IntrinsicHeight(
-																																		child: Container(
+																																		child: SizedBox(
 																																			width: double.infinity,
 																																			child: Column(
 																																				crossAxisAlignment: CrossAxisAlignment.start,
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"Central Park",
 																																							style: TextStyle(
 																																								color: Color(0xFF161411),
@@ -339,7 +339,7 @@ class CreateTourState extends State<CreateTour> {
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
 																																						width: double.infinity,
-																																						child: Text(
+																																						child: const Text(
 																																							"Enjoy a relaxing day outdoors",
 																																							style: TextStyle(
 																																								color: Color(0xFF827268),
@@ -384,7 +384,7 @@ class CreateTourState extends State<CreateTour> {
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 50),
-																																	child: Text(
+																																	child: const Text(
 																																		"The Italian Bistro",
 																																		style: TextStyle(
 																																			color: Color(0xFF161411),
@@ -396,7 +396,7 @@ class CreateTourState extends State<CreateTour> {
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 30),
 																																	width: 143,
-																																	child: Text(
+																																	child: const Text(
 																																		"Savor authentic Italian cuisine",
 																																		style: TextStyle(
 																																			color: Color(0xFF827268),
@@ -418,7 +418,7 @@ class CreateTourState extends State<CreateTour> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Select Events",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -441,11 +441,11 @@ class CreateTourState extends State<CreateTour> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(16),
-																													color: Color(0xFFF4F2F2),
+																													color: const Color(0xFFF4F2F2),
 																												),
 																												padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
 																												margin: const EdgeInsets.only( right: 12),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -468,12 +468,12 @@ class CreateTourState extends State<CreateTour> {
 																											alignment: Alignment.center,
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(16),
-																												color: Color(0xFFF4F2F2),
+																												color: const Color(0xFFF4F2F2),
 																											),
 																											padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
 																											margin: const EdgeInsets.only( right: 12),
 																											child: TextField(
-																												style: TextStyle(
+																												style: const TextStyle(
 																													color: Color(0xFF161411),
 																													fontSize: 14,
 																													fontWeight: FontWeight.bold,
@@ -481,7 +481,7 @@ class CreateTourState extends State<CreateTour> {
 																												onChanged: (value) { 
 																													setState(() { textField3 = value; });
 																												},
-																												decoration: InputDecoration(
+																												decoration: const InputDecoration(
 																													hintText: "Festivals",
 																													isDense: true,
 																													contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -498,10 +498,10 @@ class CreateTourState extends State<CreateTour> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(16),
-																													color: Color(0xFFF4F2F2),
+																													color: const Color(0xFFF4F2F2),
 																												),
 																												padding: const EdgeInsets.only( top: 5, bottom: 5, left: 16, right: 16),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -555,14 +555,14 @@ class CreateTourState extends State<CreateTour> {
 																																		)
 																																	),
 																																	IntrinsicHeight(
-																																		child: Container(
+																																		child: SizedBox(
 																																			width: double.infinity,
 																																			child: Column(
 																																				crossAxisAlignment: CrossAxisAlignment.start,
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"Summer Music Fest",
 																																							style: TextStyle(
 																																								color: Color(0xFF161411),
@@ -573,7 +573,7 @@ class CreateTourState extends State<CreateTour> {
 																																					),
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"Live music performances",
 																																							style: TextStyle(
 																																								color: Color(0xFF827268),
@@ -608,14 +608,14 @@ class CreateTourState extends State<CreateTour> {
 																																		)
 																																	),
 																																	IntrinsicHeight(
-																																		child: Container(
+																																		child: SizedBox(
 																																			width: double.infinity,
 																																			child: Column(
 																																				crossAxisAlignment: CrossAxisAlignment.start,
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"City Arts Fair",
 																																							style: TextStyle(
 																																								color: Color(0xFF161411),
@@ -626,7 +626,7 @@ class CreateTourState extends State<CreateTour> {
 																																					),
 																																					Container(
 																																						margin: const EdgeInsets.only( bottom: 1),
-																																						child: Text(
+																																						child: const Text(
 																																							"Local artists showcase",
 																																							style: TextStyle(
 																																								color: Color(0xFF827268),
@@ -672,7 +672,7 @@ class CreateTourState extends State<CreateTour> {
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 74),
 																																	width: 99,
-																																	child: Text(
+																																	child: const Text(
 																																		"Photography Exhibition",
 																																		style: TextStyle(
 																																			color: Color(0xFF161411),
@@ -683,7 +683,7 @@ class CreateTourState extends State<CreateTour> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 16),
-																																	child: Text(
+																																	child: const Text(
 																																		"Stunning photo displays",
 																																		style: TextStyle(
 																																			color: Color(0xFF827268),
@@ -708,7 +708,7 @@ class CreateTourState extends State<CreateTour> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
@@ -719,7 +719,7 @@ class CreateTourState extends State<CreateTour> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(24),
-																								color: Color(0xFFEDD1BF),
+																								color: const Color(0xFFEDD1BF),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -728,7 +728,7 @@ class CreateTourState extends State<CreateTour> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Create Tour",
 																											style: TextStyle(
 																												color: Color(0xFF161411),
@@ -743,10 +743,10 @@ class CreateTourState extends State<CreateTour> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFFFFFFF),
+																					color: const Color(0xFFFFFFFF),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

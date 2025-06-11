@@ -11,13 +11,13 @@ class AdminDashboardState extends State<AdminDashboard> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,20 +26,20 @@ class AdminDashboardState extends State<AdminDashboard> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -53,7 +53,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Admin Dashboard",
 																									style: TextStyle(
 																										color: Color(0xFF0C141C),
@@ -67,7 +67,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Content Moderation",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -78,7 +78,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -90,7 +90,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -124,7 +124,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 106),
-																													child: Text(
+																													child: const Text(
 																														"Places",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -133,7 +133,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"12 pending submissions",
 																													style: TextStyle(
 																														color: Color(0xFF4472A0),
@@ -150,7 +150,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -162,7 +162,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -196,7 +196,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 56),
-																													child: Text(
+																													child: const Text(
 																														"Reviews",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -205,7 +205,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"5 pending reviews",
 																													style: TextStyle(
 																														color: Color(0xFF4472A0),
@@ -222,7 +222,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"User Management",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -233,7 +233,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -245,7 +245,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -279,7 +279,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 169),
-																													child: Text(
+																													child: const Text(
 																														"Users",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -288,7 +288,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"Manage user accounts and roles",
 																													style: TextStyle(
 																														color: Color(0xFF4472A0),
@@ -305,7 +305,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -317,7 +317,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -351,7 +351,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 104),
-																													child: Text(
+																													child: const Text(
 																														"Categories",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -360,7 +360,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"Manage categories of places",
 																													style: TextStyle(
 																														color: Color(0xFF4472A0),
@@ -377,7 +377,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Global Statistics",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -405,7 +405,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -418,7 +418,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																children: [
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"Total Users",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -429,7 +429,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"15,450",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -448,7 +448,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -461,7 +461,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
 																																		width: double.infinity,
-																																		child: Text(
+																																		child: const Text(
 																																			"Active Users (Last 30 Days)",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -472,7 +472,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"8,230",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -494,7 +494,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																									child: Container(
 																										decoration: BoxDecoration(
 																											border: Border.all(
-																												color: Color(0xFFCCDBEA),
+																												color: const Color(0xFFCCDBEA),
 																												width: 1,
 																											),
 																											borderRadius: BorderRadius.circular(12),
@@ -507,7 +507,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"New Users (Last 30 Days)",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -518,7 +518,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"1,560",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -554,7 +554,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -568,7 +568,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
 																																		width: double.infinity,
-																																		child: Text(
+																																		child: const Text(
 																																			"Most Popular Place",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -580,7 +580,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
 																																		width: double.infinity,
-																																		child: Text(
+																																		child: const Text(
 																																			"Hassan II Mosque",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -599,7 +599,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -611,7 +611,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																children: [
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"Average Rating",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -622,7 +622,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"4.7",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -644,7 +644,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																									child: Container(
 																										decoration: BoxDecoration(
 																											border: Border.all(
-																												color: Color(0xFFCCDBEA),
+																												color: const Color(0xFFCCDBEA),
 																												width: 1,
 																											),
 																											borderRadius: BorderRadius.circular(12),
@@ -657,7 +657,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"Total Reviews",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -668,7 +668,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"2,345",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -704,7 +704,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -718,7 +718,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
 																																		width: double.infinity,
-																																		child: Text(
+																																		child: const Text(
 																																			"Daily Active Users",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -729,7 +729,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"2,500",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -748,7 +748,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -761,7 +761,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
 																																		width: 63,
-																																		child: Text(
+																																		child: const Text(
 																																			"Average Session Duration",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -773,7 +773,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
 																																		width: double.infinity,
-																																		child: Text(
+																																		child: const Text(
 																																			"25 minutes",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -795,7 +795,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																									child: Container(
 																										decoration: BoxDecoration(
 																											border: Border.all(
-																												color: Color(0xFFCCDBEA),
+																												color: const Color(0xFFCCDBEA),
 																												width: 1,
 																											),
 																											borderRadius: BorderRadius.circular(12),
@@ -808,7 +808,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"Retention Rate (30 Days)",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -819,7 +819,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"45%",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -841,14 +841,14 @@ class AdminDashboardState extends State<AdminDashboard> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						decoration: BoxDecoration(
+																						decoration: const BoxDecoration(
 																							border: Border(
 																								top: BorderSide(
 																									color: Color(0xFFE5EDF4),
@@ -882,7 +882,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																														child: Text(
+																														child: const Text(
 																															"Home",
 																															style: TextStyle(
 																																color: Color(0xFF4472A0),
@@ -916,7 +916,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 20, right: 20),
-																														child: Text(
+																														child: const Text(
 																															"Explore",
 																															style: TextStyle(
 																																color: Color(0xFF4472A0),
@@ -950,7 +950,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 24, right: 24),
-																														child: Text(
+																														child: const Text(
 																															"Saved",
 																															style: TextStyle(
 																																color: Color(0xFF4472A0),
@@ -986,7 +986,7 @@ class AdminDashboardState extends State<AdminDashboard> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 23, right: 23),
-																														child: Text(
+																														child: const Text(
 																															"Profile",
 																															style: TextStyle(
 																																color: Color(0xFF0C141C),
@@ -1005,10 +1005,10 @@ class AdminDashboardState extends State<AdminDashboard> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFF7F9FC),
+																					color: const Color(0xFFF7F9FC),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

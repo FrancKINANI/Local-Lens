@@ -14,13 +14,13 @@ class AccountState extends State<Account> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -29,7 +29,7 @@ class AccountState extends State<Account> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFFFFFFF),
+														color: const Color(0xFFFFFFFF),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,7 +43,7 @@ class AccountState extends State<Account> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFFFFFFF),
+																						color: const Color(0xFFFFFFFF),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -57,7 +57,7 @@ class AccountState extends State<Account> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Create account",
 																									style: TextStyle(
 																										color: Color(0xFF161411),
@@ -74,20 +74,20 @@ class AccountState extends State<Account> {
 																						alignment: Alignment.center,
 																						decoration: BoxDecoration(
 																							borderRadius: BorderRadius.circular(12),
-																							color: Color(0xFFF4F2EF),
+																							color: const Color(0xFFF4F2EF),
 																						),
 																						padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																						margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																						width: double.infinity,
 																						child: TextField(
-																							style: TextStyle(
+																							style: const TextStyle(
 																								color: Color(0xFF897060),
 																								fontSize: 16,
 																							),
 																							onChanged: (value) { 
 																								setState(() { textField1 = value; });
 																							},
-																							decoration: InputDecoration(
+																							decoration: const InputDecoration(
 																								hintText: "Email",
 																								isDense: true,
 																								contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -101,20 +101,20 @@ class AccountState extends State<Account> {
 																						alignment: Alignment.center,
 																						decoration: BoxDecoration(
 																							borderRadius: BorderRadius.circular(12),
-																							color: Color(0xFFF4F2EF),
+																							color: const Color(0xFFF4F2EF),
 																						),
 																						padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																						margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																						width: double.infinity,
 																						child: TextField(
-																							style: TextStyle(
+																							style: const TextStyle(
 																								color: Color(0xFF897060),
 																								fontSize: 16,
 																							),
 																							onChanged: (value) { 
 																								setState(() { textField2 = value; });
 																							},
-																							decoration: InputDecoration(
+																							decoration: const InputDecoration(
 																								hintText: "Password",
 																								isDense: true,
 																								contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -128,20 +128,20 @@ class AccountState extends State<Account> {
 																						alignment: Alignment.center,
 																						decoration: BoxDecoration(
 																							borderRadius: BorderRadius.circular(12),
-																							color: Color(0xFFF4F2EF),
+																							color: const Color(0xFFF4F2EF),
 																						),
 																						padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																						margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																						width: double.infinity,
 																						child: TextField(
-																							style: TextStyle(
+																							style: const TextStyle(
 																								color: Color(0xFF897060),
 																								fontSize: 16,
 																							),
 																							onChanged: (value) { 
 																								setState(() { textField3 = value; });
 																							},
-																							decoration: InputDecoration(
+																							decoration: const InputDecoration(
 																								hintText: "Confirm  password",
 																								isDense: true,
 																								contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -156,7 +156,7 @@ class AccountState extends State<Account> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(12),
-																								color: Color(0xFFED7728),
+																								color: const Color(0xFFED7728),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -165,7 +165,7 @@ class AccountState extends State<Account> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Create account",
 																											style: TextStyle(
 																												color: Color(0xFFFFFFFF),
@@ -184,7 +184,7 @@ class AccountState extends State<Account> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
@@ -192,7 +192,7 @@ class AccountState extends State<Account> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Already have an account? Sign in",
 																						style: TextStyle(
 																							color: Color(0xFF897060),
@@ -202,10 +202,10 @@ class AccountState extends State<Account> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFFFFFFF),
+																					color: const Color(0xFFFFFFFF),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

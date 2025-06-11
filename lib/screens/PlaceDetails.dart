@@ -11,13 +11,13 @@ class PlaceDetailsState extends State<PlaceDetails> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -25,7 +25,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 											crossAxisAlignment: CrossAxisAlignment.start,
 											children: [
 												IntrinsicHeight(
-													child: Container(
+													child: SizedBox(
 														width: double.infinity,
 														child: Stack(
 															clipBehavior: Clip.none,
@@ -35,14 +35,14 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																	children: [
 																		IntrinsicHeight(
 																			child: Container(
-																				color: Color(0xFFF9F9F9),
+																				color: const Color(0xFFF9F9F9),
 																				width: double.infinity,
 																				child: Column(
 																					crossAxisAlignment: CrossAxisAlignment.start,
 																					children: [
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFF9F9F9),
+																								color: const Color(0xFFF9F9F9),
 																								padding: const EdgeInsets.all(16),
 																								margin: const EdgeInsets.only( bottom: 16),
 																								width: double.infinity,
@@ -58,9 +58,9 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																											)
 																										),
 																										Expanded(
-																											child: Container(
+																											child: SizedBox(
 																												width: double.infinity,
-																												child: Text(
+																												child: const Text(
 																													"Place Details",
 																													style: TextStyle(
 																														color: Color(0xFF141414),
@@ -101,7 +101,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Hassan II Mosque",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -112,7 +112,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 4, bottom: 4, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Religious Site · 4.7 • 1,234 reviews · 2.5 km away",
 																								style: TextStyle(
 																									color: Color(0xFF727272),
@@ -134,11 +134,11 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																													child: Container(
 																														decoration: BoxDecoration(
 																															borderRadius: BorderRadius.circular(20),
-																															color: Color(0xFF000000),
+																															color: const Color(0xFF000000),
 																														),
 																														padding: const EdgeInsets.only( top: 9, bottom: 9, left: 16, right: 16),
 																														margin: const EdgeInsets.only( right: 12),
-																														child: Column(
+																														child: const Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Text(
@@ -162,10 +162,10 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																													child: Container(
 																														decoration: BoxDecoration(
 																															borderRadius: BorderRadius.circular(20),
-																															color: Color(0xFFEDEDED),
+																															color: const Color(0xFFEDEDED),
 																														),
 																														padding: const EdgeInsets.only( top: 9, bottom: 9, left: 16, right: 16),
-																														child: Column(
+																														child: const Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Text(
@@ -188,7 +188,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 16, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Description",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -200,7 +200,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						Container(
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																							width: double.infinity,
-																							child: Text(
+																							child: const Text(
 																								"The Hassan II Mosque is a stunning architectural marvel and one of the largest mosques in the world. Its intricate design, towering minaret, and location on the Atlantic coast make it a must-see landmark in Casablanca.",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -210,7 +210,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 16, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Practical Information",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -236,7 +236,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																														IntrinsicWidth(
 																															child: IntrinsicHeight(
 																																child: Container(
-																																	decoration: BoxDecoration(
+																																	decoration: const BoxDecoration(
 																																		border: Border(
 																																			top: BorderSide(
 																																				color: Color(0xFFE5E8EA),
@@ -251,7 +251,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																		children: [
 																																			Container(
 																																				margin: const EdgeInsets.only( bottom: 1, right: 36),
-																																				child: Text(
+																																				child: const Text(
 																																					"Hours",
 																																					style: TextStyle(
 																																						color: Color(0xFF727272),
@@ -262,7 +262,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																			Container(
 																																				margin: const EdgeInsets.only( bottom: 1, right: 22),
 																																				width: 50,
-																																				child: Text(
+																																				child: const Text(
 																																					"9 AM - 6 PM",
 																																					style: TextStyle(
 																																						color: Color(0xFF141414),
@@ -278,7 +278,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																														Expanded(
 																															child: IntrinsicHeight(
 																																child: Container(
-																																	decoration: BoxDecoration(
+																																	decoration: const BoxDecoration(
 																																		border: Border(
 																																			top: BorderSide(
 																																				color: Color(0xFFE5E8EA),
@@ -293,7 +293,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																		children: [
 																																			Container(
 																																				margin: const EdgeInsets.only( bottom: 1),
-																																				child: Text(
+																																				child: const Text(
 																																					"Phone",
 																																					style: TextStyle(
 																																						color: Color(0xFF727272),
@@ -301,7 +301,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																					),
 																																				),
 																																			),
-																																			Text(
+																																			const Text(
 																																				"+212 522 22 54 40",
 																																				style: TextStyle(
 																																					color: Color(0xFF141414),
@@ -326,14 +326,14 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														IntrinsicHeight(
-																															child: Container(
+																															child: SizedBox(
 																																width: double.infinity,
 																																child: Row(
 																																	crossAxisAlignment: CrossAxisAlignment.start,
 																																	children: [
 																																		Container(
 																																			margin: const EdgeInsets.only( right: 44),
-																																			child: Text(
+																																			child: const Text(
 																																				"Website",
 																																				style: TextStyle(
 																																					color: Color(0xFF727272),
@@ -341,7 +341,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																				),
 																																			),
 																																		),
-																																		Text(
+																																		const Text(
 																																			"Price",
 																																			style: TextStyle(
 																																				color: Color(0xFF727272),
@@ -352,7 +352,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																),
 																															),
 																														),
-																														IntrinsicWidth(
+																														const IntrinsicWidth(
 																															child: IntrinsicHeight(
 																																child: Column(
 																																	crossAxisAlignment: CrossAxisAlignment.start,
@@ -392,7 +392,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 16, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Location",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -412,7 +412,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 4, bottom: 4, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Bd de la Corniche, Casablanca 20000, Morocco",
 																								style: TextStyle(
 																									color: Color(0xFF727272),
@@ -422,7 +422,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 16, bottom: 16, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Reviews",
 																								style: TextStyle(
 																									color: Color(0xFF141414),
@@ -433,7 +433,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																						),
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFF9F9F9),
+																								color: const Color(0xFFF9F9F9),
 																								padding: const EdgeInsets.symmetric(vertical: 16),
 																								width: double.infinity,
 																								child: Column(
@@ -441,7 +441,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																									children: [
 																										IntrinsicHeight(
 																											child: Container(
-																												color: Color(0xFFF9F9F9),
+																												color: const Color(0xFFF9F9F9),
 																												margin: const EdgeInsets.only( bottom: 32, left: 16, right: 16),
 																												width: double.infinity,
 																												child: Column(
@@ -464,14 +464,14 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																		),
 																																		Expanded(
 																																			child: IntrinsicHeight(
-																																				child: Container(
+																																				child: SizedBox(
 																																					width: double.infinity,
 																																					child: Column(
 																																						crossAxisAlignment: CrossAxisAlignment.start,
 																																						children: [
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"Fatima",
 																																									style: TextStyle(
 																																										color: Color(0xFF141414),
@@ -482,7 +482,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																							),
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"2 months ago",
 																																									style: TextStyle(
 																																										color: Color(0xFF727272),
@@ -511,7 +511,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																														Container(
 																															margin: const EdgeInsets.only( bottom: 13),
 																															width: double.infinity,
-																															child: Text(
+																															child: const Text(
 																																"Absolutely breathtaking! The architecture is stunning, and the location by the sea is magical. A must-visit in Casablanca.",
 																																style: TextStyle(
 																																	color: Color(0xFF141414),
@@ -542,7 +542,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"12",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -569,7 +569,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"2",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -591,7 +591,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																										),
 																										IntrinsicHeight(
 																											child: Container(
-																												color: Color(0xFFF9F9F9),
+																												color: const Color(0xFFF9F9F9),
 																												margin: const EdgeInsets.only( bottom: 32, left: 16, right: 16),
 																												width: double.infinity,
 																												child: Column(
@@ -614,14 +614,14 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																		),
 																																		Expanded(
 																																			child: IntrinsicHeight(
-																																				child: Container(
+																																				child: SizedBox(
 																																					width: double.infinity,
 																																					child: Column(
 																																						crossAxisAlignment: CrossAxisAlignment.start,
 																																						children: [
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"Omar",
 																																									style: TextStyle(
 																																										color: Color(0xFF141414),
@@ -632,7 +632,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																							),
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"3 months ago",
 																																									style: TextStyle(
 																																										color: Color(0xFF727272),
@@ -661,8 +661,8 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																														Container(
 																															margin: const EdgeInsets.only( bottom: 13),
 																															width: double.infinity,
-																															child: Text(
-																																"Impressive mosque with beautiful details. It\'s a bit crowded, but definitely worth seeing.",
+																															child: const Text(
+																																"Impressive mosque with beautiful details. It's a bit crowded, but definitely worth seeing.",
 																																style: TextStyle(
 																																	color: Color(0xFF141414),
 																																	fontSize: 16,
@@ -692,7 +692,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"8",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -719,7 +719,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"1",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -741,7 +741,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																										),
 																										IntrinsicHeight(
 																											child: Container(
-																												color: Color(0xFFF9F9F9),
+																												color: const Color(0xFFF9F9F9),
 																												margin: const EdgeInsets.symmetric(horizontal: 16),
 																												width: double.infinity,
 																												child: Column(
@@ -764,14 +764,14 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																		),
 																																		Expanded(
 																																			child: IntrinsicHeight(
-																																				child: Container(
+																																				child: SizedBox(
 																																					width: double.infinity,
 																																					child: Column(
 																																						crossAxisAlignment: CrossAxisAlignment.start,
 																																						children: [
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"Aisha",
 																																									style: TextStyle(
 																																										color: Color(0xFF141414),
@@ -782,7 +782,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																							),
 																																							Container(
 																																								margin: const EdgeInsets.only( bottom: 1),
-																																								child: Text(
+																																								child: const Text(
 																																									"4 months ago",
 																																									style: TextStyle(
 																																										color: Color(0xFF727272),
@@ -811,8 +811,8 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																														Container(
 																															margin: const EdgeInsets.only( bottom: 13),
 																															width: double.infinity,
-																															child: Text(
-																																"One of the most beautiful mosques I\'ve ever seen. The craftsmanship is incredible, and the atmosphere is serene.",
+																															child: const Text(
+																																"One of the most beautiful mosques I've ever seen. The craftsmanship is incredible, and the atmosphere is serene.",
 																																style: TextStyle(
 																																	color: Color(0xFF141414),
 																																	fontSize: 16,
@@ -842,7 +842,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"15",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -869,7 +869,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																																						),
 																																						Container(
 																																							margin: const EdgeInsets.only( bottom: 1),
-																																							child: Text(
+																																							child: const Text(
 																																								"3",
 																																								style: TextStyle(
 																																									color: Color(0xFF727272),
@@ -894,7 +894,7 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																							),
 																						),
 																						IntrinsicHeight(
-																							child: Container(
+																							child: SizedBox(
 																								width: double.infinity,
 																								child: Column(
 																									crossAxisAlignment: CrossAxisAlignment.start,
@@ -909,10 +909,10 @@ class PlaceDetailsState extends State<PlaceDetails> {
 																											)
 																										),
 																										Container(
-																											color: Color(0xFFF9F9F9),
+																											color: const Color(0xFFF9F9F9),
 																											height: 20,
 																											width: double.infinity,
-																											child: SizedBox(),
+																											child: const SizedBox(),
 																										),
 																									]
 																								),

@@ -13,13 +13,13 @@ class SignUp/InState extends State<SignUp/In> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -28,7 +28,7 @@ class SignUp/InState extends State<SignUp/In> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF9F9F9),
+														color: const Color(0xFFF9F9F9),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,13 +42,13 @@ class SignUp/InState extends State<SignUp/In> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 28, bottom: 28, left: 16, right: 24),
 																						width: double.infinity,
 																						child: Column(
 																							crossAxisAlignment: CrossAxisAlignment.start,
 																							children: [
-																								Container(
+																								SizedBox(
 																									width: 24,
 																									height: 24,
 																									child: Image.network(
@@ -63,7 +63,7 @@ class SignUp/InState extends State<SignUp/In> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Login",
 																						style: TextStyle(
 																							color: Color(0xFF141414),
@@ -82,7 +82,7 @@ class SignUp/InState extends State<SignUp/In> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 8),
-																									child: Text(
+																									child: const Text(
 																										"Email",
 																										style: TextStyle(
 																											color: Color(0xFF141414),
@@ -104,7 +104,7 @@ class SignUp/InState extends State<SignUp/In> {
 																													child: IntrinsicHeight(
 																														child: Container(
 																															alignment: Alignment.center,
-																															decoration: BoxDecoration(
+																															decoration: const BoxDecoration(
 																																border: Border(
 																																	top: BorderSide(
 																																		color: Color(0xFFDBDBDB),
@@ -128,14 +128,14 @@ class SignUp/InState extends State<SignUp/In> {
 																															padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																															width: double.infinity,
 																															child: TextField(
-																																style: TextStyle(
+																																style: const TextStyle(
 																																	color: Color(0xFF727272),
 																																	fontSize: 16,
 																																),
 																																onChanged: (value) { 
 																																	setState(() { textField1 = value; });
 																																},
-																																decoration: InputDecoration(
+																																decoration: const InputDecoration(
 																																	hintText: "Enter  your email",
 																																	isDense: true,
 																																	contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -148,7 +148,7 @@ class SignUp/InState extends State<SignUp/In> {
 																												IntrinsicWidth(
 																													child: IntrinsicHeight(
 																														child: Container(
-																															decoration: BoxDecoration(
+																															decoration: const BoxDecoration(
 																																border: Border(
 																																	top: BorderSide(
 																																		color: Color(0xFFDBDBDB),
@@ -174,7 +174,7 @@ class SignUp/InState extends State<SignUp/In> {
 																																crossAxisAlignment: CrossAxisAlignment.start,
 																																children: [
 																																	Container(
-																																		decoration: BoxDecoration(
+																																		decoration: const BoxDecoration(
 																																			borderRadius: BorderRadius.only(
 																																				topRight: Radius.circular(12),
 																																				bottomRight: Radius.circular(12),
@@ -183,7 +183,7 @@ class SignUp/InState extends State<SignUp/In> {
 																																		width: 24,
 																																		height: 24,
 																																		child: ClipRRect(
-																																			borderRadius: BorderRadius.only(
+																																			borderRadius: const BorderRadius.only(
 																																				topRight: Radius.circular(12),
 																																				bottomRight: Radius.circular(12),
 																																			),
@@ -215,7 +215,7 @@ class SignUp/InState extends State<SignUp/In> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 8),
-																									child: Text(
+																									child: const Text(
 																										"Password",
 																										style: TextStyle(
 																											color: Color(0xFF141414),
@@ -237,7 +237,7 @@ class SignUp/InState extends State<SignUp/In> {
 																													child: IntrinsicHeight(
 																														child: Container(
 																															alignment: Alignment.center,
-																															decoration: BoxDecoration(
+																															decoration: const BoxDecoration(
 																																border: Border(
 																																	top: BorderSide(
 																																		color: Color(0xFFDBDBDB),
@@ -261,14 +261,14 @@ class SignUp/InState extends State<SignUp/In> {
 																															padding: const EdgeInsets.only( top: 16, bottom: 16, left: 16, right: 32),
 																															width: double.infinity,
 																															child: TextField(
-																																style: TextStyle(
+																																style: const TextStyle(
 																																	color: Color(0xFF727272),
 																																	fontSize: 16,
 																																),
 																																onChanged: (value) { 
 																																	setState(() { textField2 = value; });
 																																},
-																																decoration: InputDecoration(
+																																decoration: const InputDecoration(
 																																	hintText: "Enter  your password",
 																																	isDense: true,
 																																	contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -281,7 +281,7 @@ class SignUp/InState extends State<SignUp/In> {
 																												IntrinsicWidth(
 																													child: IntrinsicHeight(
 																														child: Container(
-																															decoration: BoxDecoration(
+																															decoration: const BoxDecoration(
 																																border: Border(
 																																	top: BorderSide(
 																																		color: Color(0xFFDBDBDB),
@@ -307,7 +307,7 @@ class SignUp/InState extends State<SignUp/In> {
 																																crossAxisAlignment: CrossAxisAlignment.start,
 																																children: [
 																																	Container(
-																																		decoration: BoxDecoration(
+																																		decoration: const BoxDecoration(
 																																			borderRadius: BorderRadius.only(
 																																				topRight: Radius.circular(12),
 																																				bottomRight: Radius.circular(12),
@@ -316,7 +316,7 @@ class SignUp/InState extends State<SignUp/In> {
 																																		width: 24,
 																																		height: 24,
 																																		child: ClipRRect(
-																																			borderRadius: BorderRadius.only(
+																																			borderRadius: const BorderRadius.only(
 																																				topRight: Radius.circular(12),
 																																				bottomRight: Radius.circular(12),
 																																			),
@@ -342,7 +342,7 @@ class SignUp/InState extends State<SignUp/In> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Forgot Password?",
 																						style: TextStyle(
 																							color: Color(0xFF727272),
@@ -357,7 +357,7 @@ class SignUp/InState extends State<SignUp/In> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(24),
-																								color: Color(0xFF000000),
+																								color: const Color(0xFF000000),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -366,7 +366,7 @@ class SignUp/InState extends State<SignUp/In> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Login",
 																											style: TextStyle(
 																												color: Color(0xFFF9F9F9),
@@ -383,7 +383,7 @@ class SignUp/InState extends State<SignUp/In> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"or",
 																						style: TextStyle(
 																							color: Color(0xFF727272),
@@ -401,7 +401,7 @@ class SignUp/InState extends State<SignUp/In> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 8),
-																									child: Text(
+																									child: const Text(
 																										"User Type",
 																										style: TextStyle(
 																											color: Color(0xFF141414),
@@ -414,19 +414,19 @@ class SignUp/InState extends State<SignUp/In> {
 																									child: Container(
 																										decoration: BoxDecoration(
 																											border: Border.all(
-																												color: Color(0xFFDBDBDB),
+																												color: const Color(0xFFDBDBDB),
 																												width: 1,
 																											),
 																											borderRadius: BorderRadius.circular(12),
-																											color: Color(0xFFF9F9F9),
+																											color: const Color(0xFFF9F9F9),
 																										),
 																										width: double.infinity,
 																										child: Row(
 																											children: [
 																												Expanded(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Select  User  Type",
 																															style: TextStyle(
 																																color: Color(0xFF141414),
@@ -462,7 +462,7 @@ class SignUp/InState extends State<SignUp/In> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
@@ -473,7 +473,7 @@ class SignUp/InState extends State<SignUp/In> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(24),
-																								color: Color(0xFFEDEDED),
+																								color: const Color(0xFFEDEDED),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 12),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -482,7 +482,7 @@ class SignUp/InState extends State<SignUp/In> {
 																								children: [
 																									Container(
 																										margin: const EdgeInsets.only( bottom: 1),
-																										child: Text(
+																										child: const Text(
 																											"Create Account",
 																											style: TextStyle(
 																												color: Color(0xFF141414),
@@ -497,10 +497,10 @@ class SignUp/InState extends State<SignUp/In> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFF9F9F9),
+																					color: const Color(0xFFF9F9F9),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

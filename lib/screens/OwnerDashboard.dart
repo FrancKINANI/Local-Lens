@@ -11,13 +11,13 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,20 +26,20 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -53,7 +53,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Dashboard",
 																									style: TextStyle(
 																										color: Color(0xFF0C141C),
@@ -67,7 +67,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Establishment Management",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -78,7 +78,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -90,7 +90,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(8),
 																												margin: const EdgeInsets.only( right: 16),
@@ -119,7 +119,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Add New Establishment",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -133,7 +133,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -145,7 +145,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(8),
 																												margin: const EdgeInsets.only( right: 16),
@@ -174,7 +174,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Edit Existing Establishment",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -188,7 +188,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -200,7 +200,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(8),
 																												margin: const EdgeInsets.only( right: 16),
@@ -229,7 +229,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Manage Events",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -243,7 +243,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Performance Overview",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -271,7 +271,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -284,7 +284,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																																children: [
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"Visits",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -295,7 +295,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"1,234",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -314,7 +314,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																														child: Container(
 																															decoration: BoxDecoration(
 																																border: Border.all(
-																																	color: Color(0xFFCCDBEA),
+																																	color: const Color(0xFFCCDBEA),
 																																	width: 1,
 																																),
 																																borderRadius: BorderRadius.circular(12),
@@ -326,7 +326,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																																children: [
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"Average Rating",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -337,7 +337,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																																	),
 																																	Container(
 																																		margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																																		child: Text(
+																																		child: const Text(
 																																			"4.5",
 																																			style: TextStyle(
 																																				color: Color(0xFF0C141C),
@@ -359,7 +359,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																									child: Container(
 																										decoration: BoxDecoration(
 																											border: Border.all(
-																												color: Color(0xFFCCDBEA),
+																												color: const Color(0xFFCCDBEA),
 																												width: 1,
 																											),
 																											borderRadius: BorderRadius.circular(12),
@@ -372,7 +372,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 9, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"User Engagement",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -383,7 +383,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 1, left: 25, right: 25),
-																													child: Text(
+																													child: const Text(
 																														"25%",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -402,7 +402,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Reviews",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -413,7 +413,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -425,7 +425,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(8),
 																												margin: const EdgeInsets.only( right: 16),
@@ -454,7 +454,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Respond to Reviews",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -468,7 +468,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Premium Features",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -479,7 +479,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -491,7 +491,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -520,14 +520,14 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																								),
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
-																														child: Text(
+																														child: const Text(
 																															"Unlock Premium",
 																															style: TextStyle(
 																																color: Color(0xFF0C141C),
@@ -539,7 +539,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Access advanced analytics and marketing tools.",
 																															style: TextStyle(
 																																color: Color(0xFF4472A0),
@@ -558,7 +558,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -570,7 +570,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(8),
-																													color: Color(0xFFE5EDF4),
+																													color: const Color(0xFFE5EDF4),
 																												),
 																												padding: const EdgeInsets.all(12),
 																												margin: const EdgeInsets.only( right: 16),
@@ -602,7 +602,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Text(
+																												const Text(
 																													"Subscription Status",
 																													style: TextStyle(
 																														color: Color(0xFF0C141C),
@@ -612,7 +612,7 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( right: 29),
-																													child: Text(
+																													child: const Text(
 																														"Current Plan: Basic",
 																														style: TextStyle(
 																															color: Color(0xFF4472A0),
@@ -633,10 +633,10 @@ class OwnerDashboardState extends State<OwnerDashboard> {
 																	),
 																),
 																Container(
-																	color: Color(0xFFF7F9FC),
+																	color: const Color(0xFFF7F9FC),
 																	height: 20,
 																	width: double.infinity,
-																	child: SizedBox(),
+																	child: const SizedBox(),
 																),
 															]
 														),

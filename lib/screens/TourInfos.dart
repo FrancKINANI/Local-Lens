@@ -11,13 +11,13 @@ class TourInfosState extends State<TourInfos> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,20 +26,20 @@ class TourInfosState extends State<TourInfos> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF9F9F9),
+														color: const Color(0xFFF9F9F9),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -53,7 +53,7 @@ class TourInfosState extends State<TourInfos> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Tour Info",
 																									style: TextStyle(
 																										color: Color(0xFF0F1416),
@@ -65,7 +65,7 @@ class TourInfosState extends State<TourInfos> {
 																						),
 																					),
 																				),
-																				Container(
+																				SizedBox(
 																					height: 218,
 																					width: double.infinity,
 																					child: Image.network(
@@ -75,7 +75,7 @@ class TourInfosState extends State<TourInfos> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Tour Highlights",
 																						style: TextStyle(
 																							color: Color(0xFF0F1416),
@@ -93,14 +93,14 @@ class TourInfosState extends State<TourInfos> {
 																							children: [
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Event",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -110,7 +110,7 @@ class TourInfosState extends State<TourInfos> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Casablanca Film Festival",
 																															style: TextStyle(
 																																color: Color(0xFF0F1416),
@@ -122,7 +122,7 @@ class TourInfosState extends State<TourInfos> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Annual film festival showcasing international and Moroccan cinema.",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -162,14 +162,14 @@ class TourInfosState extends State<TourInfos> {
 																							children: [
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Monument",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -179,7 +179,7 @@ class TourInfosState extends State<TourInfos> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Hassan II Mosque",
 																															style: TextStyle(
 																																color: Color(0xFF0F1416),
@@ -191,7 +191,7 @@ class TourInfosState extends State<TourInfos> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Iconic mosque with stunning architecture and ocean views.",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -231,14 +231,14 @@ class TourInfosState extends State<TourInfos> {
 																							children: [
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Hotel",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -248,7 +248,7 @@ class TourInfosState extends State<TourInfos> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Hotel Casablanca",
 																															style: TextStyle(
 																																color: Color(0xFF0F1416),
@@ -260,7 +260,7 @@ class TourInfosState extends State<TourInfos> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Luxury hotel with modern amenities and city center location.",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -300,14 +300,14 @@ class TourInfosState extends State<TourInfos> {
 																							children: [
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Mall",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -317,7 +317,7 @@ class TourInfosState extends State<TourInfos> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Morocco Mall",
 																															style: TextStyle(
 																																color: Color(0xFF0F1416),
@@ -329,7 +329,7 @@ class TourInfosState extends State<TourInfos> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: 161,
-																														child: Text(
+																														child: const Text(
 																															"Large shopping mall with international brands and entertainment options.",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -369,14 +369,14 @@ class TourInfosState extends State<TourInfos> {
 																							children: [
 																								Expanded(
 																									child: IntrinsicHeight(
-																										child: Container(
+																										child: SizedBox(
 																											width: double.infinity,
 																											child: Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
+																														child: const Text(
 																															"Restaurant",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -386,8 +386,8 @@ class TourInfosState extends State<TourInfos> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 5),
-																														child: Text(
-																															"Rick\'s Cafe",
+																														child: const Text(
+																															"Rick's Cafe",
 																															style: TextStyle(
 																																color: Color(0xFF0F1416),
 																																fontSize: 16,
@@ -398,7 +398,7 @@ class TourInfosState extends State<TourInfos> {
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"Famous restaurant inspired by the movie Casablanca, offering a unique dining experience.",
 																															style: TextStyle(
 																																color: Color(0xFF5B7589),
@@ -431,7 +431,7 @@ class TourInfosState extends State<TourInfos> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Tour Route",
 																						style: TextStyle(
 																							color: Color(0xFF0F1416),
@@ -454,7 +454,7 @@ class TourInfosState extends State<TourInfos> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
@@ -473,11 +473,11 @@ class TourInfosState extends State<TourInfos> {
 																											child: Container(
 																												decoration: BoxDecoration(
 																													borderRadius: BorderRadius.circular(20),
-																													color: Color(0xFFDBE8F2),
+																													color: const Color(0xFFDBE8F2),
 																												),
 																												padding: const EdgeInsets.only( top: 9, bottom: 9, left: 16, right: 16),
 																												margin: const EdgeInsets.only( right: 111),
-																												child: Column(
+																												child: const Column(
 																													crossAxisAlignment: CrossAxisAlignment.start,
 																													children: [
 																														Text(
@@ -499,11 +499,11 @@ class TourInfosState extends State<TourInfos> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(20),
-																												color: Color(0xFFEAEDF2),
+																												color: const Color(0xFFEAEDF2),
 																											),
 																											padding: const EdgeInsets.only( top: 9, bottom: 9, left: 16, right: 16),
 																											width: double.infinity,
-																											child: Column(
+																											child: const Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Text(
@@ -524,10 +524,10 @@ class TourInfosState extends State<TourInfos> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFF9F9F9),
+																					color: const Color(0xFFF9F9F9),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

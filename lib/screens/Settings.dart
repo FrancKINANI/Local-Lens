@@ -11,13 +11,13 @@ class SettingsState extends State<Settings> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class SettingsState extends State<Settings> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class SettingsState extends State<Settings> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -54,7 +54,7 @@ class SettingsState extends State<Settings> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Settings",
 																									style: TextStyle(
 																										color: Color(0xFF0C141C),
@@ -68,7 +68,7 @@ class SettingsState extends State<Settings> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Preferences",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -79,7 +79,7 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -87,7 +87,7 @@ class SettingsState extends State<Settings> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Language",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -97,7 +97,7 @@ class SettingsState extends State<Settings> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"English",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -111,14 +111,14 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Notifications",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -131,7 +131,7 @@ class SettingsState extends State<Settings> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(15),
-																												color: Color(0xFFE5EDF4),
+																												color: const Color(0xFFE5EDF4),
 																											),
 																											padding: const EdgeInsets.only( top: 2, bottom: 2, left: 2, right: 22),
 																											child: Column(
@@ -140,8 +140,8 @@ class SettingsState extends State<Settings> {
 																													Container(
 																														decoration: BoxDecoration(
 																															borderRadius: BorderRadius.circular(13),
-																															color: Color(0xFFFFFFFF),
-																															boxShadow: [
+																															color: const Color(0xFFFFFFFF),
+																															boxShadow: const [
 																																BoxShadow(
 																																	color: Color(0x26000000),
 																																	blurRadius: 8,
@@ -151,7 +151,7 @@ class SettingsState extends State<Settings> {
 																														),
 																														width: 27,
 																														height: 27,
-																														child: SizedBox(),
+																														child: const SizedBox(),
 																													),
 																												]
 																											),
@@ -164,7 +164,7 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -172,7 +172,7 @@ class SettingsState extends State<Settings> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Display",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -182,7 +182,7 @@ class SettingsState extends State<Settings> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Light",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -196,7 +196,7 @@ class SettingsState extends State<Settings> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Support",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -207,14 +207,14 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 14, bottom: 14, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Help Center",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -237,14 +237,14 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 14, bottom: 14, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Contact Us",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -267,7 +267,7 @@ class SettingsState extends State<Settings> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"Legal",
 																						style: TextStyle(
 																							color: Color(0xFF0C141C),
@@ -278,14 +278,14 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 14, bottom: 14, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Terms of Service",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -308,14 +308,14 @@ class SettingsState extends State<Settings> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 14, bottom: 14, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Privacy Policy",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -341,7 +341,7 @@ class SettingsState extends State<Settings> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
@@ -352,12 +352,12 @@ class SettingsState extends State<Settings> {
 																						child: Container(
 																							decoration: BoxDecoration(
 																								borderRadius: BorderRadius.circular(12),
-																								color: Color(0xFFE5EDF4),
+																								color: const Color(0xFFE5EDF4),
 																							),
 																							padding: const EdgeInsets.symmetric(vertical: 9),
 																							margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
 																							width: double.infinity,
-																							child: Column(
+																							child: const Column(
 																								children: [
 																									Text(
 																										"Log Out",
@@ -373,10 +373,10 @@ class SettingsState extends State<Settings> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFF7F9FC),
+																					color: const Color(0xFFF7F9FC),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

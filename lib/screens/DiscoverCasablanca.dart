@@ -12,13 +12,13 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -27,20 +27,20 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
 															children: [
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -55,9 +55,9 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																									)
 																								),
 																								Expanded(
-																									child: Container(
+																									child: SizedBox(
 																										width: double.infinity,
-																										child: Text(
+																										child: const Text(
 																											"Discover Casablanca",
 																											style: TextStyle(
 																												color: Color(0xFF0C141C),
@@ -91,7 +91,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																								IntrinsicWidth(
 																									child: IntrinsicHeight(
 																										child: Container(
-																											decoration: BoxDecoration(
+																											decoration: const BoxDecoration(
 																												borderRadius: BorderRadius.only(
 																													topLeft: Radius.circular(8),
 																													bottomLeft: Radius.circular(8),
@@ -103,7 +103,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Container(
-																														decoration: BoxDecoration(
+																														decoration: const BoxDecoration(
 																															borderRadius: BorderRadius.only(
 																																topLeft: Radius.circular(8),
 																																bottomLeft: Radius.circular(8),
@@ -112,7 +112,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																														width: 24,
 																														height: 24,
 																														child: ClipRRect(
-																															borderRadius: BorderRadius.only(
+																															borderRadius: const BorderRadius.only(
 																																topLeft: Radius.circular(8),
 																																bottomLeft: Radius.circular(8),
 																															),
@@ -131,7 +131,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																									child: IntrinsicHeight(
 																										child: Container(
 																											alignment: Alignment.center,
-																											decoration: BoxDecoration(
+																											decoration: const BoxDecoration(
 																												borderRadius: BorderRadius.only(
 																													topRight: Radius.circular(8),
 																													bottomRight: Radius.circular(8),
@@ -141,14 +141,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																											padding: const EdgeInsets.only( top: 12, bottom: 12, left: 8, right: 16),
 																											width: double.infinity,
 																											child: TextField(
-																												style: TextStyle(
+																												style: const TextStyle(
 																													color: Color(0xFF49729B),
 																													fontSize: 16,
 																												),
 																												onChanged: (value) { 
 																													setState(() { textField1 = value; });
 																												},
-																												decoration: InputDecoration(
+																												decoration: const InputDecoration(
 																													hintText: "Search  for a place...",
 																													isDense: true,
 																													contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -171,7 +171,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17, right: 32),
-																									child: Text(
+																									child: const Text(
 																										"All",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -182,7 +182,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17, right: 12),
-																									child: Text(
+																									child: const Text(
 																										"Restaurants",
 																										style: TextStyle(
 																											color: Color(0xFF49729B),
@@ -193,7 +193,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17, right: 32),
-																									child: Text(
+																									child: const Text(
 																										"Monuments",
 																										style: TextStyle(
 																											color: Color(0xFF49729B),
@@ -204,7 +204,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17),
-																									child: Text(
+																									child: const Text(
 																										"Events",
 																										style: TextStyle(
 																											color: Color(0xFF49729B),
@@ -219,14 +219,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 12, bottom: 12, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( bottom: 1),
-																									child: Text(
+																									child: const Text(
 																										"Map View",
 																										style: TextStyle(
 																											color: Color(0xFF0C141C),
@@ -239,7 +239,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(15),
-																												color: Color(0xFFE8EDF4),
+																												color: const Color(0xFFE8EDF4),
 																											),
 																											padding: const EdgeInsets.only( top: 2, bottom: 2, left: 2, right: 22),
 																											child: Column(
@@ -248,8 +248,8 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																													Container(
 																														decoration: BoxDecoration(
 																															borderRadius: BorderRadius.circular(13),
-																															color: Color(0xFFFFFFFF),
-																															boxShadow: [
+																															color: const Color(0xFFFFFFFF),
+																															boxShadow: const [
 																																BoxShadow(
 																																	color: Color(0x26000000),
 																																	blurRadius: 8,
@@ -259,7 +259,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																														),
 																														width: 27,
 																														height: 27,
-																														child: SizedBox(),
+																														child: const SizedBox(),
 																													),
 																												]
 																											),
@@ -300,7 +300,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 5),
-																													child: Text(
+																													child: const Text(
 																														"Ricks Cafe",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -310,14 +310,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 5),
-																																	child: Text(
+																																	child: const Text(
 																																		"Restaurant · 1.2 km · ★ 4.5",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -327,7 +327,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 99),
-																																	child: Text(
+																																	child: const Text(
 																																		"View Details",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -377,7 +377,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 5),
-																													child: Text(
+																													child: const Text(
 																														"Hassan II Mosque",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -387,14 +387,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 5),
-																																	child: Text(
+																																	child: const Text(
 																																		"Monument · 2.5 km · ★ 4.8",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -404,7 +404,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 100),
-																																	child: Text(
+																																	child: const Text(
 																																		"View Details",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -454,7 +454,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 5),
-																													child: Text(
+																													child: const Text(
 																														"Casablanca Festival",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -464,14 +464,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 5),
-																																	child: Text(
+																																	child: const Text(
 																																		"Event · 5 km · ★ 4.2",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -481,7 +481,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 48),
-																																	child: Text(
+																																	child: const Text(
 																																		"View Details",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -531,7 +531,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( bottom: 5),
-																													child: Text(
+																													child: const Text(
 																														"Central Market",
 																														style: TextStyle(
 																															color: Color(0xFF0C141C),
@@ -541,14 +541,14 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Column(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 5),
-																																	child: Text(
+																																	child: const Text(
 																																		"Market · 0.8 km · ★ 4.0",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -558,7 +558,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1, right: 72),
-																																	child: Text(
+																																	child: const Text(
 																																		"View Details",
 																																		style: TextStyle(
 																																			color: Color(0xFF49729B),
@@ -582,7 +582,7 @@ class DiscoverCasablancaState extends State<DiscoverCasablanca> {
 																		),
 																	),
 																),
-																Container(
+																SizedBox(
 																	height: 73,
 																	width: double.infinity,
 																	child: Image.network(

@@ -11,7 +11,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
@@ -19,8 +19,8 @@ class PlaceDetailState extends State<PlaceDetail> {
 								child: Container(
 									decoration: BoxDecoration(
 										borderRadius: BorderRadius.circular(40),
-										color: Color(0xFFE0F0FF),
-										boxShadow: [
+										color: const Color(0xFFE0F0FF),
+										boxShadow: const [
 											BoxShadow(
 												color: Color(0x1C242132),
 												blurRadius: 160,
@@ -45,7 +45,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																	child: Container(
 																		padding: const EdgeInsets.only( top: 40, bottom: 104),
 																		width: double.infinity,
-																		decoration: BoxDecoration(
+																		decoration: const BoxDecoration(
 																			image: DecorationImage(
 																				image: NetworkImage("https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/384033af-37e9-4959-8dfc-de8eafb6fef8"),
 																				fit: BoxFit.cover
@@ -73,7 +73,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																					child: IntrinsicHeight(
 																						child: Container(
 																							margin: const EdgeInsets.only( left: 30),
-																							child: Column(
+																							child: const Column(
 																								crossAxisAlignment: CrossAxisAlignment.start,
 																								children: [
 																									Text(
@@ -105,8 +105,8 @@ class PlaceDetailState extends State<PlaceDetail> {
 																	child: Container(
 																		decoration: BoxDecoration(
 																			borderRadius: BorderRadius.circular(16),
-																			color: Color(0xFFFFFFFF),
-																			boxShadow: [
+																			color: const Color(0xFFFFFFFF),
+																			boxShadow: const [
 																				BoxShadow(
 																					color: Color(0x330A487F),
 																					blurRadius: 40,
@@ -122,7 +122,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																			children: [
 																				Container(
 																					margin: const EdgeInsets.only( bottom: 7, left: 19),
-																					child: Text(
+																					child: const Text(
 																						"About",
 																						style: TextStyle(
 																							color: Color(0xFF032C4F),
@@ -134,7 +134,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																				Container(
 																					margin: const EdgeInsets.only( bottom: 23, left: 19, right: 19),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Nusa Dua is a hotbed of luxurious accommodations, golf resorts, fine dining and R&R. Surfing and diving are popular activities for more active visitors to this beach destination.",
 																						style: TextStyle(
 																							color: Color(0xFF032C4F),
@@ -144,7 +144,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( bottom: 7, left: 19),
-																					child: Text(
+																					child: const Text(
 																						"Photos",
 																						style: TextStyle(
 																							color: Color(0xFF032C4F),
@@ -203,10 +203,10 @@ class PlaceDetailState extends State<PlaceDetail> {
 																												child: Container(
 																													decoration: BoxDecoration(
 																														borderRadius: BorderRadius.circular(12),
-																														color: Color(0xFFE0E8EF),
+																														color: const Color(0xFFE0E8EF),
 																													),
 																													padding: const EdgeInsets.only( top: 13, bottom: 13, left: 11, right: 11),
-																													child: Column(
+																													child: const Column(
 																														crossAxisAlignment: CrossAxisAlignment.start,
 																														children: [
 																															Text(
@@ -230,7 +230,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( bottom: 8, left: 19),
-																					child: Text(
+																					child: const Text(
 																						"Interests",
 																						style: TextStyle(
 																							color: Color(0xFF032C4F),
@@ -256,7 +256,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																									),
 																									Container(
 																										margin: const EdgeInsets.only( right: 78),
-																										child: Text(
+																										child: const Text(
 																											"Hiking",
 																											style: TextStyle(
 																												color: Color(0xFF032C4F),
@@ -273,7 +273,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																											fit: BoxFit.fill,
 																										)
 																									),
-																									Text(
+																									const Text(
 																										"Center Bridge",
 																										style: TextStyle(
 																											color: Color(0xFF032C4F),
@@ -302,7 +302,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																									),
 																									Container(
 																										margin: const EdgeInsets.only( right: 63),
-																										child: Text(
+																										child: const Text(
 																											"Trekking",
 																											style: TextStyle(
 																												color: Color(0xFF032C4F),
@@ -319,7 +319,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																											fit: BoxFit.fill,
 																										)
 																									),
-																									Text(
+																									const Text(
 																										"Kids Playground",
 																										style: TextStyle(
 																											color: Color(0xFF032C4F),
@@ -346,7 +346,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																											fit: BoxFit.fill,
 																										)
 																									),
-																									Text(
+																									const Text(
 																										"River Rafting",
 																										style: TextStyle(
 																											color: Color(0xFF032C4F),
@@ -381,7 +381,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																				children: [
 																					Container(
 																						margin: const EdgeInsets.only( left: 14),
-																						child: Text(
+																						child: const Text(
 																							"5580",
 																							style: TextStyle(
 																								color: Color(0xFFFC881C),
@@ -392,7 +392,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																					),
 																					Container(
 																						margin: const EdgeInsets.only( bottom: 11),
-																						child: Text(
+																						child: const Text(
 																							"	৳",
 																							style: TextStyle(
 																								color: Color(0xFFFC881C),
@@ -403,7 +403,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																					),
 																					Container(
 																						margin: const EdgeInsets.only( left: 4),
-																						child: Text(
+																						child: const Text(
 																							"per night",
 																							style: TextStyle(
 																								color: Color(0xFF032C4F),
@@ -421,7 +421,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																		child: Container(
 																			decoration: BoxDecoration(
 																				borderRadius: BorderRadius.circular(12),
-																				gradient: LinearGradient(
+																				gradient: const LinearGradient(
 																					begin: Alignment(1, -3),
 																					end: Alignment(1, 3),
 																					colors: [
@@ -437,7 +437,7 @@ class PlaceDetailState extends State<PlaceDetail> {
 																				children: [
 																					Container(
 																						margin: const EdgeInsets.only( left: 54),
-																						child: Text(
+																						child: const Text(
 																							"Book Now",
 																							style: TextStyle(
 																								color: Color(0xFFFFFFFF),

@@ -11,13 +11,13 @@ class NotificationsState extends State<Notifications> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class NotificationsState extends State<Notifications> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF9F9F9),
+														color: const Color(0xFFF9F9F9),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class NotificationsState extends State<Notifications> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -54,7 +54,7 @@ class NotificationsState extends State<Notifications> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Notifications",
 																									style: TextStyle(
 																										color: Color(0xFF141414),
@@ -76,7 +76,7 @@ class NotificationsState extends State<Notifications> {
 																							children: [
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17),
-																									child: Text(
+																									child: const Text(
 																										"All",
 																										style: TextStyle(
 																											color: Color(0xFF141414),
@@ -87,7 +87,7 @@ class NotificationsState extends State<Notifications> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17),
-																									child: Text(
+																									child: const Text(
 																										"Unread",
 																										style: TextStyle(
 																											color: Color(0xFF727272),
@@ -98,7 +98,7 @@ class NotificationsState extends State<Notifications> {
 																								),
 																								Container(
 																									margin: const EdgeInsets.only( top: 16, bottom: 17),
-																									child: Text(
+																									child: const Text(
 																										"Favorites",
 																										style: TextStyle(
 																											color: Color(0xFF727272),
@@ -113,7 +113,7 @@ class NotificationsState extends State<Notifications> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -134,7 +134,7 @@ class NotificationsState extends State<Notifications> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 86),
-																													child: Text(
+																													child: const Text(
 																														"Casablanca Bites",
 																														style: TextStyle(
 																															color: Color(0xFF141414),
@@ -143,7 +143,7 @@ class NotificationsState extends State<Notifications> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"New restaurant opening near you",
 																													style: TextStyle(
 																														color: Color(0xFF727272),
@@ -160,7 +160,7 @@ class NotificationsState extends State<Notifications> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -181,7 +181,7 @@ class NotificationsState extends State<Notifications> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 132),
-																													child: Text(
+																													child: const Text(
 																														"Cafe Oasis",
 																														style: TextStyle(
 																															color: Color(0xFF141414),
@@ -190,7 +190,7 @@ class NotificationsState extends State<Notifications> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"Special offer at your favorite cafe",
 																													style: TextStyle(
 																														color: Color(0xFF727272),
@@ -207,7 +207,7 @@ class NotificationsState extends State<Notifications> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -228,7 +228,7 @@ class NotificationsState extends State<Notifications> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 135),
-																													child: Text(
+																													child: const Text(
 																														"Hotel Atlas",
 																														style: TextStyle(
 																															color: Color(0xFF141414),
@@ -237,7 +237,7 @@ class NotificationsState extends State<Notifications> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"New review for your favorite hotel",
 																													style: TextStyle(
 																														color: Color(0xFF727272),
@@ -254,7 +254,7 @@ class NotificationsState extends State<Notifications> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -273,7 +273,7 @@ class NotificationsState extends State<Notifications> {
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Text(
+																												const Text(
 																													"Casablanca Music Festival",
 																													style: TextStyle(
 																														color: Color(0xFF141414),
@@ -283,7 +283,7 @@ class NotificationsState extends State<Notifications> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( right: 17),
-																													child: Text(
+																													child: const Text(
 																														"Upcoming event in your area",
 																														style: TextStyle(
 																															color: Color(0xFF727272),
@@ -301,7 +301,7 @@ class NotificationsState extends State<Notifications> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF9F9F9),
+																						color: const Color(0xFFF9F9F9),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -322,7 +322,7 @@ class NotificationsState extends State<Notifications> {
 																											children: [
 																												Container(
 																													margin: const EdgeInsets.only( right: 62),
-																													child: Text(
+																													child: const Text(
 																														"Casablanca Museum",
 																														style: TextStyle(
 																															color: Color(0xFF141414),
@@ -331,7 +331,7 @@ class NotificationsState extends State<Notifications> {
 																														),
 																													),
 																												),
-																												Text(
+																												const Text(
 																													"New art exhibition at the museum",
 																													style: TextStyle(
 																														color: Color(0xFF727272),
@@ -351,14 +351,14 @@ class NotificationsState extends State<Notifications> {
 																	),
 																),
 																IntrinsicHeight(
-																	child: Container(
+																	child: SizedBox(
 																		width: double.infinity,
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						decoration: BoxDecoration(
+																						decoration: const BoxDecoration(
 																							border: Border(
 																								top: BorderSide(
 																									color: Color(0xFFEDEDED),
@@ -392,7 +392,7 @@ class NotificationsState extends State<Notifications> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 20, right: 20),
-																														child: Text(
+																														child: const Text(
 																															"Explore",
 																															style: TextStyle(
 																																color: Color(0xFF727272),
@@ -426,7 +426,7 @@ class NotificationsState extends State<Notifications> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 16, right: 16),
-																														child: Text(
+																														child: const Text(
 																															"Favorites",
 																															style: TextStyle(
 																																color: Color(0xFF727272),
@@ -463,7 +463,7 @@ class NotificationsState extends State<Notifications> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 4, right: 4),
-																														child: Text(
+																														child: const Text(
 																															"Notifications",
 																															style: TextStyle(
 																																color: Color(0xFF141414),
@@ -496,7 +496,7 @@ class NotificationsState extends State<Notifications> {
 																													),
 																													Container(
 																														margin: const EdgeInsets.only( bottom: 1, left: 23, right: 23),
-																														child: Text(
+																														child: const Text(
 																															"Profile",
 																															style: TextStyle(
 																																color: Color(0xFF727272),
@@ -515,10 +515,10 @@ class NotificationsState extends State<Notifications> {
 																					),
 																				),
 																				Container(
-																					color: Color(0xFFF9F9F9),
+																					color: const Color(0xFFF9F9F9),
 																					height: 20,
 																					width: double.infinity,
-																					child: SizedBox(),
+																					child: const SizedBox(),
 																				),
 																			]
 																		),

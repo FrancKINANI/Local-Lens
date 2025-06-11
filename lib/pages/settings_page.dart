@@ -26,8 +26,8 @@ class _SettingsPageState extends State<SettingsPage> {
       body: ListView(
         children: [
           // Preferences Section
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
               'Preferences',
               style: TextStyle(
@@ -36,9 +36,9 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
           ),
-          ListTile(
-            title: const Text('Language'),
-            trailing: const Text('English'),
+          const ListTile(
+            title: Text('Language'),
+            trailing: Text('English'),
           ),
           ListTile(
             title: const Text('Notifications'),
@@ -51,14 +51,14 @@ class _SettingsPageState extends State<SettingsPage> {
               },
             ),
           ),
-          ListTile(
-            title: const Text('Display'),
-            trailing: const Text('Light'),
+          const ListTile(
+            title: Text('Display'),
+            trailing: Text('Light'),
           ),
           const Divider(),
           // Support Section
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
               'Support',
               style: TextStyle(
@@ -83,8 +83,8 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           const Divider(),
           // Legal Section
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
             child: Text(
               'Legal',
               style: TextStyle(

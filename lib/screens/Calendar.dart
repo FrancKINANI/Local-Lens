@@ -11,13 +11,13 @@ class CalendarState extends State<Calendar> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class CalendarState extends State<Calendar> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFF7F9FC),
+														color: const Color(0xFFF7F9FC),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class CalendarState extends State<Calendar> {
 																			children: [
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.all(16),
 																						width: double.infinity,
 																						child: Row(
@@ -54,7 +54,7 @@ class CalendarState extends State<Calendar> {
 																										fit: BoxFit.fill,
 																									)
 																								),
-																								Text(
+																								const Text(
 																									"Events",
 																									style: TextStyle(
 																										color: Color(0xFF0C161C),
@@ -93,7 +93,7 @@ class CalendarState extends State<Calendar> {
 																													child: Container(
 																														margin: const EdgeInsets.only( bottom: 1),
 																														width: double.infinity,
-																														child: Text(
+																														child: const Text(
 																															"October 2024",
 																															style: TextStyle(
 																																color: Color(0xFF0C161C),
@@ -118,13 +118,13 @@ class CalendarState extends State<Calendar> {
 																									),
 																								),
 																								IntrinsicHeight(
-																									child: Container(
+																									child: SizedBox(
 																										width: double.infinity,
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,7 +139,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"S",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -155,7 +155,7 @@ class CalendarState extends State<Calendar> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 18, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"M",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -174,7 +174,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 20),
-																																						child: Text(
+																																						child: const Text(
 																																							"T",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -198,7 +198,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"W",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -222,7 +222,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 20),
-																																						child: Text(
+																																						child: const Text(
 																																							"T",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -246,7 +246,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 20),
-																																						child: Text(
+																																						child: const Text(
 																																							"F",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -270,7 +270,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"S",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -289,13 +289,13 @@ class CalendarState extends State<Calendar> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 21, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"1",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -314,7 +314,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"2",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -338,7 +338,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"3",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -362,7 +362,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"4",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -381,7 +381,7 @@ class CalendarState extends State<Calendar> {
 																																		child: Container(
 																																			decoration: BoxDecoration(
 																																				borderRadius: BorderRadius.circular(24),
-																																				color: Color(0xFF0C91F2),
+																																				color: const Color(0xFF0C91F2),
 																																			),
 																																			padding: const EdgeInsets.symmetric(vertical: 13),
 																																			width: double.infinity,
@@ -390,7 +390,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.symmetric(horizontal: 16),
-																																						child: Text(
+																																						child: const Text(
 																																							" 5",
 																																							style: TextStyle(
 																																								color: Color(0xFFF7F9FC),
@@ -414,7 +414,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"6",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -438,7 +438,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 20),
-																																						child: Text(
+																																						child: const Text(
 																																							"7",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -457,7 +457,7 @@ class CalendarState extends State<Calendar> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															crossAxisAlignment: CrossAxisAlignment.start,
@@ -472,7 +472,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"8",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -496,7 +496,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 19),
-																																						child: Text(
+																																						child: const Text(
 																																							"9",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -520,7 +520,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 16),
-																																						child: Text(
+																																						child: const Text(
 																																							"10",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -536,7 +536,7 @@ class CalendarState extends State<Calendar> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 18, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"11",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -555,7 +555,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"12",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -579,7 +579,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"13",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -603,7 +603,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 16),
-																																						child: Text(
+																																						child: const Text(
 																																							"14",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -622,7 +622,7 @@ class CalendarState extends State<Calendar> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															crossAxisAlignment: CrossAxisAlignment.start,
@@ -637,7 +637,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"15",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -661,7 +661,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"16",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -685,7 +685,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"17",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -709,7 +709,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 16),
-																																						child: Text(
+																																						child: const Text(
 																																							"18",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -733,7 +733,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 17),
-																																						child: Text(
+																																						child: const Text(
 																																							"19",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -757,7 +757,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 14),
-																																						child: Text(
+																																						child: const Text(
 																																							"20",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -773,7 +773,7 @@ class CalendarState extends State<Calendar> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 17, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"21",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -787,7 +787,7 @@ class CalendarState extends State<Calendar> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															crossAxisAlignment: CrossAxisAlignment.start,
@@ -802,7 +802,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"22",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -826,7 +826,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"23",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -850,7 +850,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"24",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -874,7 +874,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"25",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -898,7 +898,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"26",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -922,7 +922,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"27",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -946,7 +946,7 @@ class CalendarState extends State<Calendar> {
 																																				children: [
 																																					Container(
 																																						margin: const EdgeInsets.only( right: 15),
-																																						child: Text(
+																																						child: const Text(
 																																							"28",
 																																							style: TextStyle(
 																																								color: Color(0xFF0C161C),
@@ -965,14 +965,14 @@ class CalendarState extends State<Calendar> {
 																													),
 																												),
 																												IntrinsicHeight(
-																													child: Container(
+																													child: SizedBox(
 																														width: double.infinity,
 																														child: Row(
 																															crossAxisAlignment: CrossAxisAlignment.start,
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"29",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -983,7 +983,7 @@ class CalendarState extends State<Calendar> {
 																																),
 																																Container(
 																																	margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
-																																	child: Text(
+																																	child: const Text(
 																																		"30",
 																																		style: TextStyle(
 																																			color: Color(0xFF0C161C),
@@ -1006,7 +1006,7 @@ class CalendarState extends State<Calendar> {
 																				),
 																				Container(
 																					margin: const EdgeInsets.only( top: 20, bottom: 20, left: 16),
-																					child: Text(
+																					child: const Text(
 																						"October 15, 2024",
 																						style: TextStyle(
 																							color: Color(0xFF0C161C),
@@ -1017,7 +1017,7 @@ class CalendarState extends State<Calendar> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -1036,7 +1036,7 @@ class CalendarState extends State<Calendar> {
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Text(
+																												const Text(
 																													"Casablanca Art Fair",
 																													style: TextStyle(
 																														color: Color(0xFF0C161C),
@@ -1046,7 +1046,7 @@ class CalendarState extends State<Calendar> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( right: 13),
-																													child: Text(
+																													child: const Text(
 																														"10:00 AM - 12:00 PM",
 																														style: TextStyle(
 																															color: Color(0xFF497A9B),
@@ -1064,7 +1064,7 @@ class CalendarState extends State<Calendar> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -1083,7 +1083,7 @@ class CalendarState extends State<Calendar> {
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Text(
+																												const Text(
 																													"Casablanca Music Festival",
 																													style: TextStyle(
 																														color: Color(0xFF0C161C),
@@ -1093,7 +1093,7 @@ class CalendarState extends State<Calendar> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( right: 77),
-																													child: Text(
+																													child: const Text(
 																														"2:00 PM - 4:00 PM",
 																														style: TextStyle(
 																															color: Color(0xFF497A9B),
@@ -1111,7 +1111,7 @@ class CalendarState extends State<Calendar> {
 																				),
 																				IntrinsicHeight(
 																					child: Container(
-																						color: Color(0xFFF7F9FC),
+																						color: const Color(0xFFF7F9FC),
 																						padding: const EdgeInsets.only( top: 8, bottom: 8, left: 16, right: 16),
 																						width: double.infinity,
 																						child: Row(
@@ -1130,7 +1130,7 @@ class CalendarState extends State<Calendar> {
 																										child: Column(
 																											crossAxisAlignment: CrossAxisAlignment.start,
 																											children: [
-																												Text(
+																												const Text(
 																													"Casablanca Film Screening",
 																													style: TextStyle(
 																														color: Color(0xFF0C161C),
@@ -1140,7 +1140,7 @@ class CalendarState extends State<Calendar> {
 																												),
 																												Container(
 																													margin: const EdgeInsets.only( right: 85),
-																													child: Text(
+																													child: const Text(
 																														"6:00 PM - 8:00 PM",
 																														style: TextStyle(
 																															color: Color(0xFF497A9B),
@@ -1160,7 +1160,7 @@ class CalendarState extends State<Calendar> {
 																		),
 																	),
 																),
-																Container(
+																SizedBox(
 																	height: 96,
 																	width: double.infinity,
 																	child: Image.network(

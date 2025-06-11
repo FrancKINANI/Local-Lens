@@ -12,13 +12,13 @@ class ExploreState extends State<Explore> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class ExploreState extends State<Explore> {
 											crossAxisAlignment: CrossAxisAlignment.start,
 											children: [
 												IntrinsicHeight(
-													child: Container(
+													child: SizedBox(
 														width: double.infinity,
 														child: Stack(
 															clipBehavior: Clip.none,
@@ -36,22 +36,22 @@ class ExploreState extends State<Explore> {
 																	children: [
 																		IntrinsicHeight(
 																			child: Container(
-																				color: Color(0xFFFFFFFF),
+																				color: const Color(0xFFFFFFFF),
 																				width: double.infinity,
 																				child: Column(
 																					crossAxisAlignment: CrossAxisAlignment.start,
 																					children: [
 																						IntrinsicHeight(
 																							child: Container(
-																								color: Color(0xFFFFFFFF),
+																								color: const Color(0xFFFFFFFF),
 																								padding: const EdgeInsets.only( top: 16, bottom: 16, left: 64, right: 16),
 																								width: double.infinity,
 																								child: Row(
 																									children: [
 																										Expanded(
-																											child: Container(
+																											child: SizedBox(
 																												width: double.infinity,
-																												child: Text(
+																												child: const Text(
 																													"Explore",
 																													style: TextStyle(
 																														color: Color(0xFF161411),
@@ -85,7 +85,7 @@ class ExploreState extends State<Explore> {
 																										IntrinsicWidth(
 																											child: IntrinsicHeight(
 																												child: Container(
-																													decoration: BoxDecoration(
+																													decoration: const BoxDecoration(
 																														borderRadius: BorderRadius.only(
 																															topLeft: Radius.circular(12),
 																															bottomLeft: Radius.circular(12),
@@ -97,7 +97,7 @@ class ExploreState extends State<Explore> {
 																														crossAxisAlignment: CrossAxisAlignment.start,
 																														children: [
 																															Container(
-																																decoration: BoxDecoration(
+																																decoration: const BoxDecoration(
 																																	borderRadius: BorderRadius.only(
 																																		topLeft: Radius.circular(12),
 																																		bottomLeft: Radius.circular(12),
@@ -106,7 +106,7 @@ class ExploreState extends State<Explore> {
 																																width: 24,
 																																height: 24,
 																																child: ClipRRect(
-																																	borderRadius: BorderRadius.only(
+																																	borderRadius: const BorderRadius.only(
 																																		topLeft: Radius.circular(12),
 																																		bottomLeft: Radius.circular(12),
 																																	),
@@ -125,7 +125,7 @@ class ExploreState extends State<Explore> {
 																											child: IntrinsicHeight(
 																												child: Container(
 																													alignment: Alignment.center,
-																													decoration: BoxDecoration(
+																													decoration: const BoxDecoration(
 																														borderRadius: BorderRadius.only(
 																															topRight: Radius.circular(12),
 																															bottomRight: Radius.circular(12),
@@ -135,14 +135,14 @@ class ExploreState extends State<Explore> {
 																													padding: const EdgeInsets.only( top: 12, bottom: 12, left: 8, right: 16),
 																													width: double.infinity,
 																													child: TextField(
-																														style: TextStyle(
+																														style: const TextStyle(
 																															color: Color(0xFF897060),
 																															fontSize: 16,
 																														),
 																														onChanged: (value) { 
 																															setState(() { textField1 = value; });
 																														},
-																														decoration: InputDecoration(
+																														decoration: const InputDecoration(
 																															hintText: "Search",
 																															isDense: true,
 																															contentPadding: EdgeInsets.symmetric(vertical: 0),
@@ -166,7 +166,7 @@ class ExploreState extends State<Explore> {
 																											IntrinsicWidth(
 																												child: IntrinsicHeight(
 																													child: Container(
-																														decoration: BoxDecoration(
+																														decoration: const BoxDecoration(
 																															border: Border(
 																																bottom: BorderSide(
 																																	color: Color(0xFFE5E8EA),
@@ -187,7 +187,7 @@ class ExploreState extends State<Explore> {
 																																		fit: BoxFit.fill,
 																																	)
 																																),
-																																Text(
+																																const Text(
 																																	"Restaurants",
 																																	style: TextStyle(
 																																		color: Color(0xFF161411),
@@ -203,7 +203,7 @@ class ExploreState extends State<Explore> {
 																											IntrinsicWidth(
 																												child: IntrinsicHeight(
 																													child: Container(
-																														decoration: BoxDecoration(
+																														decoration: const BoxDecoration(
 																															border: Border(
 																																bottom: BorderSide(
 																																	color: Color(0xFFE5E8EA),
@@ -224,7 +224,7 @@ class ExploreState extends State<Explore> {
 																																		fit: BoxFit.fill,
 																																	)
 																																),
-																																Text(
+																																const Text(
 																																	"Monuments",
 																																	style: TextStyle(
 																																		color: Color(0xFF897060),
@@ -240,7 +240,7 @@ class ExploreState extends State<Explore> {
 																											IntrinsicWidth(
 																												child: IntrinsicHeight(
 																													child: Container(
-																														decoration: BoxDecoration(
+																														decoration: const BoxDecoration(
 																															border: Border(
 																																bottom: BorderSide(
 																																	color: Color(0xFFE5E8EA),
@@ -261,7 +261,7 @@ class ExploreState extends State<Explore> {
 																																		fit: BoxFit.fill,
 																																	)
 																																),
-																																Text(
+																																const Text(
 																																	"Hotels",
 																																	style: TextStyle(
 																																		color: Color(0xFF897060),
@@ -276,7 +276,7 @@ class ExploreState extends State<Explore> {
 																											),
 																											Container(
 																												margin: const EdgeInsets.only( top: 58),
-																												child: Text(
+																												child: const Text(
 																													"Shopping Malls",
 																													style: TextStyle(
 																														color: Color(0xFF897060),
@@ -292,7 +292,7 @@ class ExploreState extends State<Explore> {
 																						),
 																						Container(
 																							margin: const EdgeInsets.only( top: 20, bottom: 36, left: 16),
-																							child: Text(
+																							child: const Text(
 																								"Popular",
 																								style: TextStyle(
 																									color: Color(0xFF161411),
@@ -340,7 +340,7 @@ class ExploreState extends State<Explore> {
 																																			children: [
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 22),
-																																					child: Text(
+																																					child: const Text(
 																																						"The Gourmet Spot",
 																																						style: TextStyle(
 																																							color: Color(0xFF161411),
@@ -351,7 +351,7 @@ class ExploreState extends State<Explore> {
 																																				),
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 53),
-																																					child: Text(
+																																					child: const Text(
 																																						"4.5 (120 reviews)",
 																																						style: TextStyle(
 																																							color: Color(0xFF897060),
@@ -400,7 +400,7 @@ class ExploreState extends State<Explore> {
 																																			children: [
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 30),
-																																					child: Text(
+																																					child: const Text(
 																																						"Ancient Wonders",
 																																						style: TextStyle(
 																																							color: Color(0xFF161411),
@@ -411,7 +411,7 @@ class ExploreState extends State<Explore> {
 																																				),
 																																				Container(
 																																					margin: const EdgeInsets.only( bottom: 1, right: 51),
-																																					child: Text(
+																																					child: const Text(
 																																						"4.7 (250 reviews)",
 																																						style: TextStyle(
 																																							color: Color(0xFF897060),
@@ -436,7 +436,7 @@ class ExploreState extends State<Explore> {
 																															children: [
 																																Container(
 																																	margin: const EdgeInsets.only( bottom: 1),
-																																	child: Text(
+																																	child: const Text(
 																																		"Luxury Retreat",
 																																		style: TextStyle(
 																																			color: Color(0xFF161411),
@@ -445,7 +445,7 @@ class ExploreState extends State<Explore> {
 																																		),
 																																	),
 																																),
-																																Text(
+																																const Text(
 																																	"4.6 (180 reviews)",
 																																	style: TextStyle(
 																																		color: Color(0xFF897060),
@@ -463,14 +463,14 @@ class ExploreState extends State<Explore> {
 																							),
 																						),
 																						IntrinsicHeight(
-																							child: Container(
+																							child: SizedBox(
 																								width: double.infinity,
 																								child: Column(
 																									crossAxisAlignment: CrossAxisAlignment.start,
 																									children: [
 																										IntrinsicHeight(
 																											child: Container(
-																												decoration: BoxDecoration(
+																												decoration: const BoxDecoration(
 																													border: Border(
 																														top: BorderSide(
 																															color: Color(0xFFF4F2EF),
@@ -504,7 +504,7 @@ class ExploreState extends State<Explore> {
 																																					fit: BoxFit.fill,
 																																				)
 																																			),
-																																			Text(
+																																			const Text(
 																																				"Explore",
 																																				style: TextStyle(
 																																					color: Color(0xFF161411),
@@ -534,7 +534,7 @@ class ExploreState extends State<Explore> {
 																																					fit: BoxFit.fill,
 																																				)
 																																			),
-																																			Text(
+																																			const Text(
 																																				"Favorites",
 																																				style: TextStyle(
 																																					color: Color(0xFF897060),
@@ -564,7 +564,7 @@ class ExploreState extends State<Explore> {
 																																					fit: BoxFit.fill,
 																																				)
 																																			),
-																																			Text(
+																																			const Text(
 																																				"Plan",
 																																				style: TextStyle(
 																																					color: Color(0xFF897060),
@@ -593,7 +593,7 @@ class ExploreState extends State<Explore> {
 																																					fit: BoxFit.fill,
 																																				)
 																																			),
-																																			Text(
+																																			const Text(
 																																				"Admin",
 																																				style: TextStyle(
 																																					color: Color(0xFF897060),
@@ -611,10 +611,10 @@ class ExploreState extends State<Explore> {
 																											),
 																										),
 																										Container(
-																											color: Color(0xFFFFFFFF),
+																											color: const Color(0xFFFFFFFF),
 																											height: 20,
 																											width: double.infinity,
-																											child: SizedBox(),
+																											child: const SizedBox(),
 																										),
 																									]
 																								),

@@ -132,7 +132,7 @@ class DetailPage extends StatelessWidget {
             child: Container(
               color: Colors.white,
               padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   // Removed price display

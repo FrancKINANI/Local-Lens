@@ -11,13 +11,13 @@ class WelcomeState extends State<Welcome> {
 			body: SafeArea(
 				child: Container(
 					constraints: const BoxConstraints.expand(),
-					color: Color(0xFFFFFFFF),
+					color: const Color(0xFFFFFFFF),
 					child: Column(
 						crossAxisAlignment: CrossAxisAlignment.start,
 						children: [
 							Expanded(
 								child: Container(
-									color: Color(0xFFFFFFFF),
+									color: const Color(0xFFFFFFFF),
 									width: double.infinity,
 									height: double.infinity,
 									child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class WelcomeState extends State<Welcome> {
 											children: [
 												IntrinsicHeight(
 													child: Container(
-														color: Color(0xFFFFFFFF),
+														color: const Color(0xFFFFFFFF),
 														width: double.infinity,
 														child: Column(
 															crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +38,7 @@ class WelcomeState extends State<Welcome> {
 																		child: Column(
 																			crossAxisAlignment: CrossAxisAlignment.start,
 																			children: [
-																				Container(
+																				SizedBox(
 																					height: 320,
 																					width: double.infinity,
 																					child: Image.network(
@@ -49,7 +49,7 @@ class WelcomeState extends State<Welcome> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Discover your next adventure",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -62,7 +62,7 @@ class WelcomeState extends State<Welcome> {
 																				Container(
 																					margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
 																					width: double.infinity,
-																					child: Text(
+																					child: const Text(
 																						"Explore curated tours, save your favorites, and plan your perfect trip with ease.",
 																						style: TextStyle(
 																							color: Color(0xFF161411),
@@ -82,10 +82,10 @@ class WelcomeState extends State<Welcome> {
 																										child: Container(
 																											decoration: BoxDecoration(
 																												borderRadius: BorderRadius.circular(24),
-																												color: Color(0xFFEDD1BF),
+																												color: const Color(0xFFEDD1BF),
 																											),
 																											padding: const EdgeInsets.only( top: 12, bottom: 13, left: 20, right: 20),
-																											child: Column(
+																											child: const Column(
 																												crossAxisAlignment: CrossAxisAlignment.start,
 																												children: [
 																													Text(
@@ -110,10 +110,10 @@ class WelcomeState extends State<Welcome> {
 																	),
 																),
 																Container(
-																	color: Color(0xFFFFFFFF),
+																	color: const Color(0xFFFFFFFF),
 																	height: 20,
 																	width: double.infinity,
-																	child: SizedBox(),
+																	child: const SizedBox(),
 																),
 															]
 														),
